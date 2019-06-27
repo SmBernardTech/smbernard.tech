@@ -12,7 +12,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Susan M Bernard: Full Stack Web Developer">
-    <meta property="og:image" content="assets/images/logos/x630logo.png">
+    <meta property="og:image" content="assets/image/logo/x630logo.png">
     <meta property="og:url" content="http://mojopixie.com/">
     <meta property="og:site_name" content="Susan M Bernard: Full Stack Web Developer">
     <meta property="og:description" content="Susan M Bernard is a professional full-stack developer, who merges artistic creativity with technical execution in the Greater Atlanta Area, GA, USA. Contact:(470.429.8556)">
@@ -22,12 +22,21 @@
     <!-- <meta name="twitter:creator" content="@SusanMBernard"> -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Susan M Bernard: Full Stack Web Developer">
-    <meta name="twitter:image" content="assets/images/logos/x630logo.png">
+    <meta name="twitter:image" content="assets/image/logo/x630logo.png">
     <meta name="twitter:description" content="Susan M Bernard is a professional full-stack software developer, who merges artistic creativity with technical execution in the Greater Atlanta Area, GA, USA. Contact:(470.429.8556)">
 
 
     <!-- Favicon -->
-    <link href="assets/images/favicon.ico" rel="icon">
+    <link href="assets/image/ico/favicon.ico" rel="icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/image/site/site.webmanifest">
+    <link rel="mask-icon" href="assets/image/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
@@ -69,7 +78,9 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-12">
-                    <a class="hero-brand" href="index.html" title="Home"><img alt="mojopixie Innovations logo light" src="assets/images/logos/logoLight.png"></a>
+                    <div id="hero">
+                        <a class="hero-brand" href="index.html" title="Home"><img alt="mojopixie Innovations logo light" src="assets/image/logo/logoDark.svg"></a>
+                    </div>
                 </div>
             </div>
 
@@ -83,15 +94,26 @@
     <!-- ================================ end of hero section ========================= -->
 
     <!-- ================================ #header ===================================== -->
-    <header id="header">
+    <!--<header id="header">
         <div class="container">
 
             <div id="logo" class="pull-left">
                 <a class="navbar-brand" href="index.html" alt="mojopixie Innovations">mojopixieInnovations</a>
-                <!-- <a href="index.html"><img src="img/skinnyLogo.png" alt="" title="" /></img>
+                 <a href="index.html"><img src="img/skinnyLogo.png" alt="" title="" /></img>
                 </a> -->
-                <!-- use for text image image -->
-                <!-- <h1><a href="#hero">mojopixieInnovations</a></h1> -->
+    <!-- use for text image image -->
+    <!-- <h1><a href="#hero">mojopixieInnovations</a></h1> 
+            </div>-->
+
+
+
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <a href="index.html"><img src="assets/image/logo/logo-nav-white.svg" alt="mojopixie Innovations Logo" title="mojopixie Innovations Logo" /></a>
+                <!-- Uncomment below if you prefer to use a text image -->
+                <!--<h1><a href="#hero">Bell</a></h1>-->
             </div>
 
             <nav id="nav-menu-container">
@@ -107,13 +129,21 @@
 
             <!--==================== #nav-menu-container ====================-->
             <nav class="nav social-nav pull-right d-none d-lg-inline">
-                <a href="https://www.linkedin.com/in/susan-bernard-600232173/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="#contact"><i class="fa fa-envelope"></i></a>
-                <!-- 
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/susan-bernard-600232173/" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="#contact">
+                    <i class="fa fa-envelope"></i>
+                </a>
+
+                <a href="https://github.com/mojopixie" target="_blank">
+                    <i class="fa fa-github-alt"></i>
+                </a>
+                <!-- <i class=""></i>
+                
                 <a href="#"><i class="fa fa-facebook"></i></a> 
                 -->
-
             </nav>
         </div>
     </header>
@@ -129,21 +159,21 @@
                 </div>
             </div>
 
-            <div class="row justify-content-left">
+            <!-- <div class="row justify-content-center">
                 <div class="col-md-6 col-sm-6">
                     <div>
-                        <img alt="mojopixie Innovations logo dark" src="assets/images/logos/logoDark.png" id="darkLogo">
+                        <img alt="mojopixie Innovations logo" src="assets/image/logo/logoLight.png" id="mojopixie Innovations Logo">
                     </div>
-                </div>
-                <div class="col-lg-5 col-md-8">
-                    <p>I am a professional software developer, who is excited to be in a new phase of my career as a freelance full-stack developer.</p>
-                    <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
-                    <p>My unique background merges artistic creativity with technical execution.</p>
-                    <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
-                    <p>My skills bring innovative and inspired solutions to your team or project, helping you stand out from your competition.</p>
-                </div>
+                </div> -->
+            <div class="col-md-12 text-center">
+                <p>I am a professional software developer, who is excited to be in a new phase of my career as a freelance full-stack developer.</p>
+                <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
+                <p>My unique background merges artistic creativity with technical execution.</p>
+                <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
+                <p>My skills bring innovative and inspired solutions to your team or project, helping you stand out from your competition.</p>
             </div>
         </div>
+        <!-- </div> -->
     </section>
     <!-- ================================ end of about section ======================== -->
 
@@ -160,87 +190,87 @@
                 <div class="owl-carousel owl-theme" id="skill">
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/android.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/android.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/apache.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/apache.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/bootstrap.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/bootstrap.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/github.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/github.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/html.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/html.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/java.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/java.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/javafx.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/javafx.svg" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/javascript.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/javascript.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/json.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/json.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/lamp.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/lamp.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/less.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/less.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/mongo.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/mongo.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/mysql.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/mysql.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/node.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/node.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/php.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/php.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/python.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/python.svg" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/rest.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/rest.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/sqlite.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/sqlite.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/wp.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/wp.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/xampp.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/xampp.png" alt="skill-image" />
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/skillStickers/xml.png" alt="skill-image" />
+                        <img src="assets/image/skillSticker/xml.png" alt="skill-image" />
                     </div>
                 </div>
             </div>
@@ -255,7 +285,7 @@
             <div class="row">
                 <div class="col-sm-4 col-xs-6">
                     <div class="card card-block">
-                        <img alt="" class="education-img" src="assets/images/education/busd.png">
+                        <img alt="" class="education-img" src="assets/image/education/busd.png">
                         <div class="card-title-wrap">
                             <span class="card-title">Boston University</span> <span class="card-text">2018</span>
                         </div>
@@ -270,7 +300,7 @@
                 <div class="col-sm-4 col-xs-6">
                     <div class="card card-block">
                         <!-- <a href="#"> -->
-                        <img class="education-img" src="assets/images/education/usucomd.png">
+                        <img class="education-img" src="assets/image/education/usucomd.png">
                         <div class="card-title-wrap">
                             <span class="card-title">University of Utah</span>
                             <span class="card-text">2016</span>
@@ -285,7 +315,7 @@
 
                 <div class="col-sm-4 col-xs-6">
                     <div class="card card-block">
-                        <img alt="" class="education-img" src="assets/images/education/uwgpsych.png">
+                        <img alt="" class="education-img" src="assets/image/education/uwgpsych.png">
                         <div class="card-title-wrap">
                             <span class="card-title">University of West Georgia</span>
                             <span class="card-text">2006</span>
@@ -331,7 +361,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="card card-block">
-                        <a href="#"><img alt="" src="assets/images/portfolio/p1ui.png">
+                        <a href="#"><img alt="" src="assets/image/portfolio/p1ui.png">
                             <div class="portfolio-over">
                                 <div>
                                     <h3 class="card-title">UI</h3>
@@ -344,7 +374,7 @@
 
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="card card-block">
-                        <a href="#"><img alt="" src="assets/images/portfolio/p2ux.png">
+                        <a href="#"><img alt="" src="assets/image/portfolio/p2ux.png">
                             <div class="portfolio-over">
                                 <div>
                                     <h3 class="card-title">UX</h3>
@@ -357,7 +387,7 @@
 
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="card card-block">
-                        <a href="#"><img alt="" src="assets/images/portfolio/p3web.png">
+                        <a href="#"><img alt="" src="assets/image/portfolio/p3web.png">
                             <div class="portfolio-over">
                                 <div>
                                     <h3 class="card-title">Web Design & Development</h3>
@@ -370,7 +400,7 @@
 
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="card card-block">
-                        <a href="#"><img alt="" src="assets/images/portfolio/p4seo.png">
+                        <a href="#"><img alt="" src="assets/image/portfolio/p4seo.png">
                             <div class="portfolio-over">
                                 <div>
                                     <h3 class="card-title">SEO</h3>
@@ -384,7 +414,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 col-xs-12">
                         <div class="card card-block">
-                            <a href="#"><img alt="" src="assets/images/portfolio/p5project.png">
+                            <a href="#"><img alt="" src="assets/image/portfolio/p5project.png">
                                 <div class="portfolio-over">
                                     <div>
                                         <h3 class="card-title">Project Development</h3>
@@ -397,7 +427,7 @@
 
                     <div class="col-lg-3 col-sm-6 col-xs-12">
                         <div class="card card-block">
-                            <a href="#"><img alt="" src="assets/images/portfolio/p6software.png">
+                            <a href="#"><img alt="" src="assets/image/portfolio/p6software.png">
                                 <div class="portfolio-over">
                                     <div>
                                         <h3 class="card-title">Software Development</h3>
@@ -410,7 +440,7 @@
 
                     <div class="col-lg-3 col-sm-6 col-xs-12">
                         <div class="card card-block">
-                            <a href="#"><img alt="" src="assets/images/portfolio/p7android.png">
+                            <a href="#"><img alt="" src="assets/image/portfolio/p7android.png">
                                 <div class="portfolio-over">
                                     <div>
                                         <h3 class="card-title">Android App Development</h3>
@@ -423,7 +453,7 @@
 
                     <div class="col-lg-3 col-sm-6 col-xs-12">
                         <div class="card card-block">
-                            <a href="#"><img alt="" src="assets/images/portfolio/p8uml.png">
+                            <a href="#"><img alt="" src="assets/image/portfolio/p8uml.png">
                                 <div class="portfolio-over">
                                     <div>
                                         <h3 class="card-title">UML</h3>
@@ -466,6 +496,12 @@
                             <a href="https://www.linkedin.com/in/susan-bernard-600232173/" target="_blank">
                                 <i class="fa fa-linkedin"></i></a><br><br>
                         </div>
+
+                        <div>
+                            <a href="https://github.com/mojopixie" target="_blank">
+                                <i class="fa fa-github"></i></a><br><br>
+                        </div>
+
                     </div>
                 </div>
 
@@ -529,7 +565,10 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-xs-12 text-lg-left text-center">
-                        <a class="navbar-branda" href="https://mojopixie.com" alt="mojopixie Innovations ">mojopixieInnovations</a>
+                        <!-- <a class="navbar-branda" href="https://mojopixie.com" alt="mojopixie Innovations ">mojopixieInnovations</a> -->
+                        <a href="index.html">
+                            <img src="assets/image/logo/logo-nav.svg" alt="mojopixie Innovations Logo" title="mojopixie Innovations Logo" />
+                        </a>
                     </div>
 
                     <div class="col-lg-6 col-xs-12 text-lg-right text-center">
@@ -542,7 +581,7 @@
                             <li class="list-inline-item"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+                    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
                         <p class="copyright-text">SmB ©2019</p>
                     </div>
                 </div>

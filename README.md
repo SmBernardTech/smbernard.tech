@@ -13,7 +13,7 @@
 * UML & Project Development
 
 ### Open to remote job opportunities
-### [Contact](http://mojopixie.com/) 
+### [Contact](http://smbernard.tech/#contact) 
 
 ~~~~
  1 (470) 429-8556
