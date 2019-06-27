@@ -164,8 +164,7 @@
     .hero {
         display: table;
         position: relative;
-        /* background-image: url(../image/bg/bg1home.jpg); */
-        background-image: url(../image/bg/bg2skills.jpg);
+        background-image: url(../image/bg/bg1home.jpg);
         background-size: cover;
         padding: 100px 0;
         color: #fff;
@@ -586,8 +585,7 @@
         box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
         display: table;
         position: relative;
-        background-image: url(../image/bg/bg1home.jpg);
-        /* background-image: url(../image/bg/bg2skills.jpg); */
+        background-image: url(../image/bg/bg2edu.jpg);
         background-size: cover;
         padding: 100px 0;
         color: #fff;
