@@ -1,5 +1,5 @@
 # Susan M Bernard
-## ![Alt](assets/images/logos/logoDark.png "SmB")
+## ![Alt](/assets/image/logo/heroLogo.svg "SmB")
 ## Full Stack Web Developer
 ### I am a professional software developer, who is excited to be in a new phase of my career as a freelance full-stack developer.
 ### My unique background merges artistic creativity with technical execution.
