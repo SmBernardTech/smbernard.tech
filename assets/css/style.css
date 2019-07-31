@@ -49,9 +49,9 @@
         height: 200px;
         position: absolute;
         left: 50%;
-        /* centers the loading animation horizontally one the screen */
+        /* centers the loading animation horizontally on the screen */
         top: 50%;
-        /* centers the loading animation vertically one the screen */
+        /* centers the loading animation vertically on the screen */
         background-image: url(https://gph.to/2XCNhGe);
         /*Credit: https://sarafarnsworth.tumblr.com/post/109181553917 */
         /* path to your loading animation */
@@ -230,7 +230,7 @@
     }
     
     #header #logo {
-        margin: 14px 25px 0 0;
+        margin: 10px 25px 0 0;
     }
     
     #header #logo h1 {
@@ -255,18 +255,14 @@
         max-height: 50px;
     }
     
-    #header .social-nav {
-        margin-top: 15px;
-    }
-    
     #header .social-nav a {
-        font-size: 24px;
-        margin-left: 15px;
-        color: #fff;
+        padding: 14px 8px 14px 8px;
+        font-size: 22px;
+        color: #464D5C;
     }
     
     #header .social-nav a:hover {
-        color: #464D5C;
+        color: #fff;
     }
     /*-------------------------------------
 	##nav-menu
@@ -317,7 +313,7 @@
         color: #fff;
         font-family: "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         outline: none;
         /* margin-left: 15px; */
     }
@@ -387,14 +383,21 @@
     }
     /*-------------------------------------
 	##nav-menu-container
---------------------------------------*/
+    --------------------------------------*/
     
     #nav-menu-container {
         margin: 0;
     }
+    /* .pull-right {
+        float: right;
+    }
+    
+    .pull-left {
+        float: left;
+    } */
     /*-------------------------------------
 	##navbar-brand
---------------------------------------*/
+    --------------------------------------*/
     
     .navbar-brand,
     .navbar-branda {
@@ -985,18 +988,18 @@
     }
     
     .site-footer p {
-        line-height: 2.0925;
+        line-height: 2;
     }
     
     .site-footer h2,
     .site-footer .btn {
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         font-weight: 800;
     }
     
     .site-footer .bottom {
         background-color: #343737;
-        padding: 20px 0;
+        padding: 20px 0 10px 0;
     }
     
     .site-footer .bottom .list-inline,
@@ -1051,6 +1054,11 @@
     .copyright-text {
         font-family: 'Dr Sugiyama', cursive;
         font-size: 16px;
+    }
+    
+    .copyright-text span {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 14px;
     }
     /* ==================================
     11. Scrolltop
