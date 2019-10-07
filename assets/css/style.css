@@ -255,6 +255,11 @@
             max-height: 50px;
         }
         
+        #header #logo img:hover,
+        #header #logo img:focus {
+            opacity: .6;
+        }
+        
         #header .social-nav a {
             padding: 14px 8px 14px 8px;
             font-size: 22px;
@@ -1034,6 +1039,11 @@
             padding: 0;
             margin: 0;
             max-height: 70px;
+        }
+        
+        .site-footer img:hover,
+        .site-footer img:focus {
+            opacity: .6;
         }
         /* ----------------------------------
 	##social-nav
