@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Susan M Bernard: Full Stack Web Developer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Susan Bernard: Freelance Full Stack Developer using Wordpress, Bootstrap, HTML, CSS, Javascript, Java, Node.js, Python, PhP, and more!" />
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <link rel="canonical" href="http://mojopixie.com/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Susan M Bernard: Full Stack Web Developer">
+    <meta property="og:image" content="assets/image/logo/x630logo.png">
+    <meta property="og:url" content="http://mojopixie.com/">
+    <meta property="og:site_name" content="Susan M Bernard: Full Stack Web Developer">
+    <meta property="og:description" content="Susan M Bernard is a professional full-stack developer, who merges artistic creativity with technical execution in the Greater Atlanta Area, GA, USA. Contact:(470.429.8556)">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <!-- <meta name="twitter:site" content="@SusanMBernard"> -->
+    <!-- <meta name="twitter:creator" content="@SusanMBernard"> -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Susan M Bernard: Full Stack Web Developer">
+    <meta name="twitter:image" content="assets/image/logo/x630logo.png">
+    <meta name="twitter:description" content="Susan M Bernard is a professional full-stack software developer, who merges artistic creativity with technical execution in the Greater Atlanta Area, GA, USA. Contact:(470.429.8556)">
+
+
+    <!-- Favicon -->
+    <link href="assets/image/ico/favicon.ico" rel="icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/image/site/site.webmanifest">
+    <link rel="mask-icon" href="assets/image/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama|Montserrat|Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+         Author: SmBernard---mojopixieInnovations
+      ======================================================= -->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!-- ================================ Page Content ================================ -->
+
+
+    <!-- ================================ #hero ======================================= -->
+
+    <section class="hero">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="hero">
+                        <!-- logoDarkwWhite -->
+                        <a class="hero-brand" href="index.html" title="Home"><img alt="mojopixie Innovations logo light" src="assets/image/logo/heroLogo.svg"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <h1>SUSAN M BERNARD</h1>
+                <p class="tagline">Full Stack Web Developer</p>
+                <a class="btn btn-full" href="assets/downloads/SMBernard1pg.docx" download="">&#8609; Download Resume &#8609;</a>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ end of hero section ========================= -->
+
+    <!-- ================================ #header ===assets/image/logo/logo-nav-white.svg================================== -->
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <a href="index.html"><img src="assets/image/logo/logo-nav4.svg" alt="mojopixie Innovations Logo" title="mojopixie Innovations Logo" /></a>
+                <!-- Uncomment below if you prefer to use a text image -->
+                <!--<h1><a href="#hero">Bell</a></h1>-->
+            </div>
+
+            <!--==================== #nav-menu-container ====================-->
+            <nav id="nav-menu-container">
+                <ul class="nav-menu pull-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <li class="nav social-nav">
+                        <a href="https://www.linkedin.com/in/susan-bernard-600232173/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav social-nav">
+                        <a href="https://github.com/mojopixie" target="_blank">
+                            <i class="fa fa-github-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav social-nav">
+                        <a href="#contact">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ================================ end of Header section ======================= -->
+
+
+    <!-- ================================ #about ====================================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">&#9884; About Me &#9884;</h2>
+                </div>
+            </div>
+
+            <!-- <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-6">
+                    <div>
+                        <img alt="mojopixie Innovations logo" src="assets/image/logo/logoLight.png" id="mojopixie Innovations Logo">
+                    </div>
+                </div> -->
+            <div class="col-md-12 text-center">
+                <p>I am a professional software developer, who is excited to be in a new phase of my career as a freelance full-stack developer.</p>
+                <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
+                <p>My unique background merges artistic creativity with technical execution.</p>
+                <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
+                <p>My skills bring innovative and inspired solutions to your team or project, helping you stand out from your competition.</p>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+    <!-- ================================ end of about section ======================== -->
+
+    <!-- ================================ #skills ===================================== -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="text-center">&#9884; Skills &#9884;</h2>
+        </div>
+
+        <div class="skill-area">
+            <div class="container">
+
+                <!-- =========================     owl-carousel    =================== -->
+                <div class="owl-carousel owl-theme" id="skill">
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/android.png" alt="android skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/apache.png" alt="apache skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/bootstrap.png" alt="bootstrap skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/github.png" alt="github skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/html.png" alt="HTML5 JS CSS skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/java.png" alt="java skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/javafx.png" alt="javaFX skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/javascript.png" alt="javascript skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/json.png" alt="JSON skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/lamp.png" alt="LAMP skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/less.png" alt="LESS skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/mongo.png" alt="MongoDB skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/mysql.png" alt="mySQL skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/node.png" alt="Node.js skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/php.png" alt="PhP skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/python.png" alt="Python skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/rest.png" alt="RESTful skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/sqlite.png" alt="SQLite skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/wp.png" alt="WordPress skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/xampp.png" alt="XAMPP skill-image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/image/skillSticker/xml.png" alt="XML skill-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ end of skills section ======================== -->
+
+    <!-- ================================ #education ================================== -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="text-center">&#9884; Education &#9884; </h2>
+            <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                    <div class="card card-block">
+                        <img alt="" class="education-img" src="assets/image/education/busd.png">
+                        <div class="card-title-wrap">
+                            <span class="card-title">Boston University</span> <span class="card-text">2018</span>
+                        </div>
+
+                        <div class="education-over">
+                            <h4 class="hidden-md-down">Master of Science</h4>
+                            <h4 class="hidden-md-down">Software Development</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-6">
+                    <div class="card card-block">
+                        <!-- <a href="#"> -->
+                        <img class="education-img" src="assets/image/education/usucomd.png">
+                        <div class="card-title-wrap">
+                            <span class="card-title">Utah State University</span>
+                            <span class="card-text">2016</span>
+                        </div>
+
+                        <div class="education-over">
+                            <h4 class="hidden-md-down">Bachelor of Science</h4>
+                            <h4 class="hidden-md-down">Communication Disorders <br>& <br>Deaf Education</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-6">
+                    <div class="card card-block">
+                        <img alt="" class="education-img" src="assets/image/education/uwgpsych.png">
+                        <div class="card-title-wrap">
+                            <span class="card-title">University of West Georgia</span>
+                            <span class="card-text">2006</span>
+                        </div>
+
+                        <div class="education-over">
+                            <h4 class="hidden-md-down">Bachelor of Arts</h4>
+                            <h4 class="hidden-md-down">Psychology</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ end of education section ==================== -->
+
+    <!-- ================================ Call to Action ============================== -->
+    <section class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 text-lg-left text-center">
+                    <h2>Open to remote job opportunities</h2>
+                    <p style="text-align: center">&#10046;&#10046;&#10046; Let's Build Something!</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 text-lg-right text-center">
+                    <a class="btn btn-ghost" href="#contact"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ end of Call to Action section =============== -->
+
+    <!-- ================================ #portfolio ================================== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container text-center">
+            <h2>&#9884; Portfolio &#9884;</h2>
+            <!-- <p>What can I do?</p> -->
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="card card-block">
+                        <img alt="User Interface Image" src="assets/image/portfolio/p1ui.png">
+                        <div class="portfolio-over">
+                            <div>
+                                <h3 class="card-title">UI</h3>
+                                <p class="card-text">Visual Design &#10049; Graphic Design &#10049; Layouts Typography &#10049; Colours &#10049; Branding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="card card-block">
+                        <img alt="User Experience Image" src="assets/image/portfolio/p2ux.png">
+                        <div class="portfolio-over">
+                            <div>
+                                <h3 class="card-title">UX</h3>
+                                <p class="card-text">User Research &#10049; User Stories &#10049; Information Architecture &#10049; Usability Testing &#10049; Personas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="card card-block">
+                        <a href="https://fineonline.com/" target="_blank">
+                            <img alt="FTS Website Image" src="assets/image/portfolio/p3web.png">
+                            <div class="portfolio-over">
+                                <div>
+                                    <h3 class="card-title">Web Design & Development</h3>
+                                    <p class="card-text">HTML, CSS, JS, JavaFX &#10049; MySQL, SQLite, & MongoDB &#10049; Java, Node, PhP, Python</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="card card-block">
+                        <img alt="SEO Image" src="assets/image/portfolio/p4seo.png">
+                        <div class="portfolio-over">
+                            <div>
+                                <h3 class="card-title">SEO</h3>
+                                <p class="card-text">Crawl Accessibility &#10049; Topic Clusters <br>&#10049; Google Rankings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card card-block">
+                            <img alt="Project Development Image" src="assets/image/portfolio/p5project.png">
+                            <div class="portfolio-over">
+                                <div>
+                                    <h3 class="card-title">Project Development</h3>
+                                    <p class="card-text">Envisioning &#10049; Market Research <br>&#10049; Requirement Gathering &#10049; Analysis <br>&#10049; Release Planning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card card-block">
+                            <img alt="Software Development Image" src="assets/image/portfolio/p6software.png">
+                            <div class="portfolio-over">
+                                <div>
+                                    <h3 class="card-title">Software Development</h3>
+                                    <p class="card-text">Planning &#10049; Analysis &#10049; Design<br>&#10049; Implementation &#10049; Testing & Integration<br>&#10049; Maintenance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card card-block">
+                            <img alt="App Development Image" src="assets/image/portfolio/p7android.png">
+                            <div class="portfolio-over">
+                                <div>
+                                    <h3 class="card-title">Android App Development</h3>
+                                    <p class="card-text">Hybrid/Native &#10049; Customer-centric<br>&#10049; Scalable &#10049; User Friendly<br>&#10049; Business-Oriented</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card card-block">
+                            <img alt="Unified Modeling Language Image" src="assets/image/portfolio/p8uml.png">
+                            <div class="portfolio-over">
+                                <div>
+                                    <h3 class="card-title">UML</h3>
+                                    <p class="card-text">Structural & Behavioral Diagrams &#10049; Class<br>&#10049; Object &#10049; Package &#10049; Activity &#10049; Use Case<br>&#10049; State Machine &#10049; Sequence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== end of portfolio section ================================= -->
+
+    <!-- ================================ #contact ==================================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">&#9884; Contact Me &#9884;</h2>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4">
+                    <div class="info">
+                        <div> <br>
+                            <i class="fa fa-map-marker"></i>
+                            <p>Greater Atlanta Area<br>GA, USA</p>
+                        </div><br>
+
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+1 470 429 8556</p><br><br>
+                        </div>
+
+                        <div>
+                            <a href="https://www.linkedin.com/in/susan-bernard-600232173/" target="_blank">
+                                <i class="fa fa-linkedin"></i></a><br><br>
+                        </div>
+
+                        <div>
+                            <a href="https://github.com/mojopixie" target="_blank">
+                                <i class="fa fa-github"></i></a><br><br>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-8">
+                    <p>&#10056; All fields required</p>
+
+                    <form id="contact-form" method="post" action="assets/php/contact.php" role="form" class="contact-form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="form-group">
+                                <label for="form_name" class="sr-only">Name</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Your Name" required="required" data-error="&#9760; Please enter at least 2 characters">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form_email" class="sr-only">Email</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter Email" required="required" data-error="&#9760; Please enter a valid email">
+                            <div class="help-block with-errors "></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form_phone" class="sr-only">Phone</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Enter Phone" required="required" data-error="&#9760; Please enter a valid phone number">
+                            <div class="help-block with-errors "></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form_message" class="sr-only">Message</label>
+                            <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="&#9760; Please include a message" placeholder="Message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <!-- ---Will need to replace testing key with personal sitekey---ENTER_GOOGLE_RECPATCHA_SITEKEY -->
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6Le_9qkUAAAAAJ5B0AlYC3n1MXOpSwHcy-kf7YjK" data-callback="verifyRecaptchaCallback" data-theme="light" data-expired-callback="expiredRecaptchaCallback"></div>
+                            <input class="form-control d-none" data-recaptcha="true" required data-error="Captcha required">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="text-center">
+                            <!-- <input type="submit" class="submitMsg float-left" value="Send Message"> -->
+                            <button type="submit" class="btn btn-full float-left">Send Message</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ end of contact section ====================== -->
+
+    <!-- ================================ footer ====================================== -->
+    <footer class="site-footer">
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+                        <!-- <a class="navbar-branda" href="https://mojopixie.com" alt="mojopixie Innovations ">mojopixieInnovations</a> -->
+                        <a href="index.html">
+                            <img src="assets/image/logo/logo-nav3.svg" alt="mojopixie Innovations Logo" title="mojopixie Innovations Logo" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="index.html">Home</a></li>
+                            <li class="list-inline-item"><a href="#about">About</a></li>
+                            <li class="list-inline-item"><a href="#education">Education</a></li>
+                            <li class="list-inline-item"><a href="#skills">Skills</a></li>
+                            <li class="list-inline-item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="list-inline-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+                        <p class="copyright-text">SmB <span>© 2019 All Rights Reserved</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================================ end of footer =============================== -->
+
+    <!-- ================================ scrolltop =================================== -->
+    <a class="scrolltop " href="#hero"><span class="fa fa-angle-up"></span></a>
+
+    <!-- ============================ end of Page Content ============================= -->
+
+    <!-- ================================ Required JavaScript Libraries =============== -->
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/lib/superfish/hoverIntent.js"></script>
+    <script src="assets/lib/superfish/superfish.min.js"></script>
+    <script src="assets/lib/tether/js/tether.min.js"></script>
+    <script src="assets/lib/stellar/stellar.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/easing/easing.js"></script>
+    <script src="assets/lib/stickyjs/sticky.js"></script>
+    <script src="assets/lib/parallax/parallax.js"></script>
+    <script src="assets/lib/lockfixed/lockfixed.min.js"></script>
+
+    <!-- ================================ Custom Javascript File ====================== -->
+    <script src="assets/js/custom.js"></script>
+    <!-- ================================ Contact Form ================================ -->
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <!-- ================================ owl.carousel.js ============================= -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- ================================ Google Recaptcha ============================ -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+</body>
+
+</html>
