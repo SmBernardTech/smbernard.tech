@@ -161,13 +161,107 @@
             </div>
 
             <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-                <a class="btn btn-ghost" href="#contact"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Contact Me</a>
+                <a class="btn btn-ghost" href="index.html#contact"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Contact
+                                                                                               Me</a>
             </div>
         </div>
     </div>
 </section>
 <!-- ================================ end of Call to Action section =============== -->
 
+<!-- ================================ #contact ==================================== -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-title">&#9884; Contact Me &#9884;</h2>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4">
+                <div class="info">
+                    <div> <br>
+                        <i class="fa fa-map-marker"></i>
+                        <p>Greater Atlanta Area<br>GA, USA</p>
+                    </div><br>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+1 470 429 8556</p><br><br>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/smbernardtech/" target="_blank">
+                            <i class="fa fa-linkedin"></i></a><br><br>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/smbernardtech" target="_blank">
+                            <i class="fa fa-github"></i></a><br><br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+                <p>&#10056; All fields required</p>
+
+                <!-- ================================ #contact-form ==================================== -->
+                <form id="contact-form" method="post" action="assets/php/contact.php" role="form" class="contact-form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="form-group">
+                            <label for="form_name" class="sr-only">Name</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Your Name" required="required" data-error="&#9760; Please enter at least 2 characters">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form_email" class="sr-only">Email</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter Email" required="required" data-error="&#9760; Please enter a valid email">
+                        <div class="help-block with-errors "></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form_phone" class="sr-only">Phone</label>
+                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Enter Phone" required="required" data-error="&#9760; Please enter a valid phone number">
+                        <div class="help-block with-errors "></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form_message" class="sr-only">Message</label>
+                        <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="&#9760; Please include a message" placeholder="Message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <!-- ---Will need to replace testing key with personal sitekey---ENTER_GOOGLE_RECPATCHA_SITEKEY
+                    6Le_9qkUAAAAAJ5B0AlYC3n1MXOpSwHcy-kf7YjK
+                    secret key 6Le_9qkUAAAAAMe3CCATCywOuYelXiCcPUoAEG3v -->
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="ENTER_GOOGLE_RECPATCHA_SITEKEY" data-callback="verifyRecaptchaCallback" data-theme="light" data-expired-callback="expiredRecaptchaCallback"></div>
+                        <input class="form-control d-none" data-recaptcha="true" required data-error="Captcha required">
+                        <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="text-center">
+                        <!-- <input type="submit" class="submitMsg float-left" value="Send Message"> -->
+                        <button type="submit" class="btn btn-full float-left">Send Message</button>
+                    </div>
+
+                </form>
+                <!-- ================================ end of contact-form ==================================== -->
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================================ end of contact section ====================== -->
 <!-- ================================ footer ====================================== -->
 <footer class="site-footer">
     <div class="bottom">
