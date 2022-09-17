@@ -26,7 +26,7 @@
 ============================================ */
 
   /* ============================================
-    ###PRELOADER #eef3f3; #BDCFCF;#474D5D;
+    ##PRELOADER #eef3f3; #BDCFCF;#474D5D;
    ============================================ */
 
         body {
@@ -39,8 +39,8 @@
           left: 0;
           right: 0;
           bottom: 0;
-          /* change to match gif image bg */
-          background-color: #45E7D5;
+          /* change to match image bg #45E7D5*/
+          background-color: #8AACAF;
           /* makes sure it stays on top */
           z-index: 99;
         }
@@ -55,15 +55,45 @@
           /* centers the loading animation vertically on the screen */
           top: 50%;
           /* path to loading animation */
-          background-image: url(https://media.giphy.com/media/3oEduXdD4soTKefWfe/giphy.gif);
-          /* Credit: commotion.tv https://giphy.com/motionaddicts   need to redo this to my own gif */
+          background-image: url(../image/logo/preLoad.png);
           background-repeat: no-repeat;
           background-position: center;
           /* is width and height divided by two */
-          margin: -100px 0 0 -100px;
+          margin: -150px 0 0 -150px;
 
         }
 
+        /* ============================================
+          #Cookie Consent Modal
+         ============================================ */
+        .modal-header {
+          background-color: #cddbdc;
+        }
+
+        .modal-body {
+          background-color: #cddbdc;
+        }
+
+        .modal-body p {
+          font-family: 'Lato', sans-serif;
+          font-size: 18px;
+        }
+
+        .learn-more {
+          text-decoration: none;
+          color: #282F47;
+          margin-top: 8px;
+        }
+
+        .learn-more:hover {
+          font-style: italic;
+          color: #59898d;
+          margin-top: 8px;
+        }
+
+        .modal-footer {
+          background-color: #cddbdc;
+        }
 
  /* ==================================
     1. General
@@ -163,6 +193,7 @@
             text-decoration: none !important;
             color: #464D5C;
         }
+        
  /* ==================================
     2. Hero
  ==================================== */
@@ -211,7 +242,7 @@
         .hero h1 {
             color: #cddbdc;
         }
-        
+
         .tagline {
             font-family: "Raleway", "Montserrat", Helvetica, Arial, sans-serif;
             font-size: 26px;
@@ -224,7 +255,9 @@
             margin: 0;
             max-height: 425px;
         }
-        /* ==================================
+        
+
+ /* ==================================
     3. Header
  ==================================== */
         
@@ -271,11 +304,12 @@
             font-size: 22px;
             color: #464D5C;
         }
-        
+
         #header .social-nav a:hover {
             color: #fff;
         }
-        /*-------------------------------------
+        
+/*-------------------------------------
 	##nav-menu
 --------------------------------------*/
         
@@ -356,7 +390,7 @@
             -o-transition: 0.3s;
             transition: 0.3s;
         }
-        
+
         .nav-menu ul li a {
             color: #474D5D;
             -webkit-transition: none;
@@ -372,7 +406,8 @@
         .nav-menu ul ul {
             margin: 0;
         }
-        /*-------------------------------------
+
+/*-------------------------------------
 	##nav-menu arrows
 --------------------------------------*/
         
@@ -392,9 +427,10 @@
         .sf-arrows ul .sf-with-ul:after {
             content: "\f105";
         }
-        /*-------------------------------------
+
+/*-------------------------------------
 	##nav-menu-container
-    --------------------------------------*/
+--------------------------------------*/
         
         #nav-menu-container {
             margin: 0;
@@ -406,10 +442,11 @@
     .pull-left {
         float: left;
     } */
-        /*-------------------------------------
+
+/*-------------------------------------
 	##navbar-brand
-    --------------------------------------*/
-        
+--------------------------------------*/
+
         .navbar-brand,
         .navbar-branda {
             font-family: 'Dr Sugiyama', cursive;
@@ -422,7 +459,7 @@
             line-height: inherit;
             white-space: nowrap;
         }
-        
+
         .navbar-brand:focus {
             font-family: 'Dr Sugiyama', cursive;
             color: #282F47;
@@ -439,7 +476,8 @@
         .navbar-branda:hover {
             color: #59898d;
         }
-        /*-------------------------------------
+
+/*-------------------------------------
 	##mobile-nav
 --------------------------------------*/
         
@@ -549,7 +587,8 @@
         body.mobile-nav-active #mobile-nav-toggle {
             color: #fff;
         }
-        /* ==================================
+
+/* ==================================
     4. About
  ==================================== */
         
@@ -568,6 +607,7 @@
         .about img {
             max-height: 400px;
         }
+        
 /* ==================================
     5. Skills
  ==================================== */
@@ -591,7 +631,8 @@
             border-radius: 0;
             margin-bottom: 25px;
         }
-        /* ==================================
+
+/* ==================================
     6. Education
  ==================================== */
         
@@ -753,6 +794,7 @@
             top: 13px;
             margin-bottom: 24px;
         }
+        
 /* ==================================
     7a. CtA as Break (ctaAB)
  ==================================== */
@@ -855,7 +897,8 @@
             opacity: 1;
             visibility: visible;
         }
-        /* ==================================
+
+/* ==================================
     9. Contact
  ==================================== */
         
@@ -898,7 +941,8 @@
             padding: 0 0 10px 50px;
             line-height: 24px;
         }
-        /* ----------------------------------
+
+/* ----------------------------------
 	##contact-form
  ------------------------------------ */
         
@@ -992,10 +1036,12 @@
             color: #ff5050;
             margin-top: 5px;
         }
+
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* ==================================
+
+/* ==================================
     10. Footer 
  ==================================== */
         
@@ -1069,7 +1115,8 @@
         .site-footer img:focus {
             opacity: .6;
         }
-        /* ----------------------------------
+
+/* ----------------------------------
 	##social-nav
  ------------------------------------ */
         
@@ -1081,7 +1128,8 @@
         .site-footer .social-nav a:hover {
             opacity: 1;
         }
-        /* ----------------------------------
+
+/* ----------------------------------
 	##copyright-text 
  ------------------------------------ */
         
@@ -1094,7 +1142,8 @@
             font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-size: 14px;
         }
-        /* ==================================
+
+/* ==================================
     11. Scrolltop
  ==================================== */
         
@@ -1119,7 +1168,8 @@
             color: #fff !important;
             opacity: .75;
         }
-        /* ==================================
+
+/* ==================================
     12. Responsive
  ==================================== */
         

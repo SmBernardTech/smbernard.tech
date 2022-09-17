@@ -1,5 +1,6 @@
 /*=========== TABLE OF CONTENTS ===========
 ###Preloader
+a. Cookie Consent Modal
 1. Smooth scrolling 
 2. superfish: Initiate on nav menu
   // Mobile Navigation
@@ -11,32 +12,22 @@
   // jQuery counterUp
 3. Scroll Top link
 4. owl carousel
-
-
-$(document).ready(function() {
-    //Preloader
-    $(window).on("load", function() {
-        preloaderFadeOutTime = 500
-
-        function hidePreloader() {
-            var preloader = $('.spinner-wrapper');
-            preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-    });
-});
-
-
 ======================================*/
 
-
+// ###Preloader
 $(window).on('load', function() { // makes sure the whole site is loaded 
     $('#status').fadeOut(); // will first fade out the loading animation 
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
     $('body').delay(350).css({ 'overflow': 'visible' });
 })
 
-
+// a. Cookie Consent Modal
+$(document).ready(function(){
+    $('#myModal').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+});
 
 // 1. Smooth scrolling
 $(document).ready(function() {
@@ -137,7 +128,7 @@ $(document).ready(function() {
             delay: 20,
         });
     }
-
+    
     // 3. Scroll Top link
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {

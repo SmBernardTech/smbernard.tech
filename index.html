@@ -18,8 +18,6 @@
     <meta property="og:description" content="Susan M Bernard is a professional full-stack developer, who merges artistic creativity with technical execution in the Greater Atlanta Area, GA, USA. Contact:(470.429.8556)">
 
     <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    <!-- <meta name="twitter:site" content="@SusanMBernard"> -->
-    <!-- <meta name="twitter:creator" content="@SusanMBernard"> -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Susan M Bernard: Full Stack Web Developer">
     <meta name="twitter:image" content="assets/image/logo/x630logo.png">
@@ -56,9 +54,8 @@
     <!-- Main Stylesheet File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!--  Cookie Consent-->
 <!--
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 
 -->
 
@@ -73,8 +70,33 @@
     <div id="status">&nbsp;</div>
 </div>
 
-<!-- ================================ Page Content ================================ -->
 
+<!-- ================================ #Cookie Consent ======================================= -->
+<!-- Modal -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cookie Consent</h5>
+            </div>
+            <div class="modal-body">
+                <p>We use cookies to improve your website experience.</p>
+                <a class="learn-more" href="https://www.learn-about-cookies.com/" target="blank">
+                    Learn more
+                    <strong><i class="fa fa-angle-right ml-2"></i></strong>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================== end of cookie consent section ==================== -->
+
+
+<!-- ================================ Page Content ================================ -->
 
 <!-- ================================ #hero ======================================= -->
 <section class="hero">
@@ -93,63 +115,10 @@
             <p class="tagline">Full Stack Web Developer</p>
             <a class="btn btn-full" href="about.html"
                target="_blank" style="font-size:18px">About Me</a>
-<!--
-              <a class="btn btn-full" href="assets/downloads/SMBernard1pg.docx"
-              download="">&#8609; Download Resume &#8609;</a>
--->
         </div>
     </div>
 </section>
 <!-- ================================ end of hero section ========================= -->
-
-<!-- ================================ #header ===================================== -->
-<!--<header id="header">
-    <div class="container">
-
-        <div id="logo" class="pull-left">
-            <a href="index.html"><img src="assets/image/logo/logo-nav-white2.svg" alt="SmBernard Tech Logo" title="SmBernard Tech Logo" /></a>
-            &lt;!&ndash; Uncomment below if you prefer to use a text image &ndash;&gt;
-            &lt;!&ndash;<h1><a href="#hero">#####</a></h1>&ndash;&gt;
-        </div>
-
-        &lt;!&ndash;==================== #nav-menu-container ====================&ndash;&gt;
-        <nav id="nav-menu-container">
-            <ul class="nav-menu pull-right">
-                <li><a href="index.html">Home</a></li>
-&lt;!&ndash;                <li><a href="about.html" data-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html#me">About Me</a></li>
-                        <li><a href="about.html#education">Education</a></li>
-                        <li><a href="about.html#skills">Skills</a></li>
-                        <li><a href="about.html#portfolio">Portfolio</a></li>
-                    </ul>
-                </li>&ndash;&gt;
-                <li><a href="index.html#contact">Contact</a></li>
-
-                <li class="nav social-nav">
-                    <a href="https://www.linkedin.com/in/smbernardtech/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                </li>
-
-                <li class="nav social-nav">
-                    <a href="https://github.com/smbernardtech" target="_blank">
-                        <i class="fa fa-github-alt"></i>
-                    </a>
-                </li>
-
-                <li class="nav social-nav">
-                    <a href="index.html#contact">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-    </div>
-</header>-->
-<!-- ================================ end of Header section ======================= -->
-
 
 <!-- ================================ Call to Action ============================== -->
 <section class="cta">
@@ -161,8 +130,9 @@
             </div>
 
             <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-                <a class="btn btn-ghost" href="index.html#contact"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Contact
-                                                                                               Me</a>
+                <a class="btn btn-ghost" href="index.html#contact">
+                    <i class="fa fa-envelope"></i>
+                    &nbsp;&nbsp;Contact Me</a>
             </div>
         </div>
     </div>
@@ -345,30 +315,6 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <!-- ================================ Google Recaptcha ============================ -->
 <script src="https://www.google.com/recaptcha/api.js"></script>
-
-<!-- ================================ Cookie Consent ============================ -->
-<!--<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-    window.cookieconsent.initialise
-    ({
-        "palette": {
-            "popup": {
-                "background": "#59898d",
-                "text": "#ffffff"
-            },
-            "button": {
-                "background": "#464d5c",
-                "text": "#ffffff"
-            }
-        },
-        "position": "top",
-        "content": {
-            "message": "We use cookies to improve user experience and analyze website traffic. " +
-                "By clicking “Accept,” you agree to our website's cookie use.",
-            "dismiss": "Accept"
-        }
-    });
-</script>-->
 
 </body>
 
