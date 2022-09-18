@@ -76,7 +76,7 @@ class ReCaptcha
     }
 
     /**
-     * Calls the reCAPTCHA siteverify API to verify whether the user passes
+     * Calls the reCAPTCHA site verify API to verify whether the user passes
      * CAPTCHA test.
      *
      * @param string $response The value of 'g-recaptcha-response' in the submitted form.

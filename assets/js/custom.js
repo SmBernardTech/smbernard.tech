@@ -33,8 +33,7 @@ $(document).ready(function(){
 $(document).ready(function() {
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
-            // if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
@@ -104,7 +103,6 @@ $(document).ready(function() {
     $("#header").sticky({ topSpacing: 0, zIndex: '50' });
 
     // Counting numbers
-
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 1000
@@ -149,7 +147,6 @@ $(document).ready(function() {
     // 4. owl carousel
 
     // i. skill (carousel)
-
     $('#skill').owlCarousel({
         items: 6,
         loop: true,

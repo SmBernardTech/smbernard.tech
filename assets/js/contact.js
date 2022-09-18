@@ -12,17 +12,17 @@ $(function () {
 
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
-            let url = "https://smbernard.tech/assets/php/contact.php";
+            var url = "https://smbernard.tech/assets/php/contact.php";
 
             $.ajax({
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
                 success: function (data) {
-                    let messageAlert = 'alert-' + data.type;
-                    let messageText = data.message;
+                    var messageAlert = 'alert-' + data.type;
+                    var messageText = data.message;
     
-                    let alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
                     if (messageAlert && messageText) {
                         $('#contact-form').find('.messages').html(alertBox);
                         $('#contact-form')[0].reset();
