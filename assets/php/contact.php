@@ -55,7 +55,7 @@ try {
         }
         
         // everything went well, we can compose the message, as usually        
-        $emailText = "&#11088; Contact Form Message (mojopipixie.com) &#11088;\n=================================================\n";
+        $emailText = "&#11088; Contact Form Message (SmBernard.Tech.com) &#11088;\n=================================================\n";
 
         foreach ($_POST as $key => $value) {
             // If the field exists in the $fields array, include it in the email
@@ -64,7 +64,7 @@ try {
             }
         }
     
-        // All the neccessary headers for the email.
+        // All the necessary headers for the email.
         $headers = array('Content-Type: text/plain; charset="UTF-8";',
             'From: ' . $from,
             'Reply-To: ' . $from,

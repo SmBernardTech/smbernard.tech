@@ -21,7 +21,7 @@ $(function () {
                 success: function (data) {
                     let messageAlert = 'alert-' + data.type;
                     let messageText = data.message;
-
+    
                     let alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
                     if (messageAlert && messageText) {
                         $('#contact-form').find('.messages').html(alertBox);
