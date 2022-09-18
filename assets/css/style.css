@@ -182,7 +182,7 @@
             padding: 0;
             border: 0;
             border-radius: 0;
-            margin: 0;
+            /*margin: 0;*/
             margin-bottom: 25px;
             overflow: hidden;
             background: #59898d;
@@ -372,9 +372,12 @@
         .nav-menu ul {
             margin: 4px 0 0 15px;
             /* -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08); */
-            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
         }
-        
+
+        .nav-menu ul {
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.08);
+        }
+
         .nav-menu ul li {
             background: #fff;
             border-top: 1px solid #f4f4f4;
@@ -715,7 +718,7 @@
             color: #fff;
             text-align: center;
         }
-        
+
         .education .education-over {
             padding-top: 45px;
             position: absolute;
@@ -1173,7 +1176,7 @@
     12. Responsive
  ==================================== */
         
-        @media (max-width: 767.9px) {
+        @media (max-width: 768px) {
             .block {
                 padding-left: 30px;
                 padding-right: 30px;

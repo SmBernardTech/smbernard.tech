@@ -33,8 +33,9 @@ $(document).ready(function(){
 $(document).ready(function() {
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
+            // if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+                let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
                 if (target.length) {
@@ -66,7 +67,7 @@ $(document).ready(function() {
 
     // Mobile Navigation
     if ($('#nav-menu-container').length) {
-        var $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav' });
+        let $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav' });
         $mobile_nav.find('> ul').attr({ 'class': '', 'id': '' });
         $('body').append($mobile_nav);
         $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
@@ -86,7 +87,7 @@ $(document).ready(function() {
         });
 
         $(document).click(function(e) {
-            var container = $("#mobile-nav, #mobile-nav-toggle");
+            let container = $("#mobile-nav, #mobile-nav-toggle");
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 if ($('body').hasClass('mobile-nav-active')) {
                     $('body').removeClass('mobile-nav-active');
@@ -116,7 +117,7 @@ $(document).ready(function() {
     // Background image via data tag
     $('[data-block-bg-img]').each(function() {
         // @todo - invoke backstretch plugin if multiple images
-        var $this = $(this),
+        let $this = $(this),
             bgImg = $this.data('block-bg-img');
 
         $this.css('backgroundImage', 'url(' + bgImg + ')').addClass('block-bg-img');
