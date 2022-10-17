@@ -25,7 +25,7 @@ $okMessage = '&#10024; Message sent! &#10024; <br> Thanks! I will contact you so
 $errorMessage = '&#10060; There was an error while submitting the form. <br> Please try again later';
 
 // ReCaptcha Secret---Will need to replace testing key with personal secret key---ENTER_SECRET_RECPATCHA_SITEKEY
-$recaptchaSecret = '';
+$recaptchaSecret = 'REPLACE';
 
 // let's do the sending
 
@@ -65,14 +65,14 @@ try {
         }
     
         // All the neccessary headers for the email.
-        $headers = array('Content-Type: text/plain; charset="UTF-8";',
+        $headers = array('Content-Type: text/plain; charset=so-8859-1',
             'From: ' . $from,
             'Reply-To: ' . $from,
             'Return-Path: ' . $from,
         );
         
         // Send email
-        mail($sendTo, $subject, $emailText, implode("\n", $headers));
+        mail($sendTo, $subject, $emailText, implode(PHP_EOL, $headers));
 
         $responseArray = array('type' => 'success', 'message' => $okMessage);
     }
