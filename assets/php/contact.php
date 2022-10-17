@@ -10,7 +10,7 @@ $from = 'info@smbernard.tech';
 $sendTo = 'info@smbernard.tech';
 
 // subject of the email
-$subject = "&#9889; New message from website's contact form &#9889;";
+$subject = "New message from website's contact form";
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -23,7 +23,7 @@ $okMessage = '&#10024; Message sent! &#10024; <br> Thanks! I will contact you so
 $errorMessage = '&#10060; There was an error while submitting the form. <br> Please try again later';
 
 // ReCaptcha Secret---Will need to replace testing key with personal secret key---ENTER_SECRET_RECPATCHA_SITEKEY
-$recaptchaSecret = 'ENTER_SECRET_RECPATCHA_SITEKEY';
+$recaptchaSecret = '6Le_9qkUAAAAAMe3CCATCywOuYelXiCcPUoAEG3v';
 
 // let's do the sending
 
@@ -53,7 +53,7 @@ try {
         }
         
         // everything went well, we can compose the message, as usually        
-        $emailText = "&#11088; Contact Form Message (smbernard.tech) &#11088;\n=================================================\n";
+        $emailText = "Contact Form Message (smbernard.tech)\n=================================================\n";
 
         foreach ($_POST as $key => $value) {
             // If the field exists in the $fields array, include it in the email
