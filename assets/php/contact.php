@@ -1,8 +1,6 @@
 <?php
 // require ReCaptcha class
 require('/home/mojopixie/smbernard.tech/assets/recaptcha/recaptcha-master/src/autoload.php');
-// require('/home/finetechnology/fineonline.com/assets/recaptcha/recaptcha-master/src/autoload.php');
-
 
 // configure
 // an email address that will be in the From field of the email.
@@ -25,7 +23,7 @@ $okMessage = '&#10024; Message sent! &#10024; <br> Thanks! I will contact you so
 $errorMessage = '&#10060; There was an error while submitting the form. <br> Please try again later';
 
 // ReCaptcha Secret---Will need to replace testing key with personal secret key---ENTER_SECRET_RECPATCHA_SITEKEY
-$recaptchaSecret = 'REPLACE';
+$recaptchaSecret = 'ENTER_SECRET_RECPATCHA_SITEKEY';
 
 // let's do the sending
 
@@ -55,7 +53,7 @@ try {
         }
         
         // everything went well, we can compose the message, as usually        
-        $emailText = "&#11088; Contact Form Message (mojopipixie.com) &#11088;\n=================================================\n";
+        $emailText = "&#11088; Contact Form Message (smbernard.tech) &#11088;\n=================================================\n";
 
         foreach ($_POST as $key => $value) {
             // If the field exists in the $fields array, include it in the email
@@ -64,8 +62,8 @@ try {
             }
         }
     
-        // All the neccessary headers for the email.
-        $headers = array('Content-Type: text/plain; charset=so-8859-1',
+        // All the necessary headers for the email.
+        $headers = array('Content-Type: text/plain; charset=iso-8859-1',
             'From: ' . $from,
             'Reply-To: ' . $from,
             'Return-Path: ' . $from,
