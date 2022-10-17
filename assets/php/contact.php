@@ -6,10 +6,10 @@ require('/home/mojopixie/smbernard.tech/assets/recaptcha/recaptcha-master/src/au
 
 // configure
 // an email address that will be in the From field of the email.
-$from = 'susanmbernard@gmail.com';
+$from = 'info@smbernard.tech';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'susanmbernard@gmail.com';
+$sendTo = 'info@smbernard.tech';
 
 // subject of the email
 $subject = "&#9889; New message from website's contact form &#9889;";
