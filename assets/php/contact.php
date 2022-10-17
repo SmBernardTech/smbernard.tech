@@ -1,6 +1,8 @@
 <?php
 // require ReCaptcha class
 require('/home/mojopixie/smbernard.tech/assets/recaptcha/recaptcha-master/src/autoload.php');
+// require('/home/finetechnology/fineonline.com/assets/recaptcha/recaptcha-master/src/autoload.php');
+
 
 // configure
 // an email address that will be in the From field of the email.
@@ -25,6 +27,7 @@ $errorMessage = '&#10060; There was an error while submitting the form. <br> Ple
 // ReCaptcha Secret---Will need to replace testing key with personal secret key---ENTER_SECRET_RECPATCHA_SITEKEY
 $recaptchaSecret = '';
 
+// let's do the sending
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
 error_reporting(E_ALL & ~E_NOTICE);
@@ -32,7 +35,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 try {
     if (!empty($_POST)) {
 
-        // validate the ReCaptcha, if something is wrong, throw an Exception,
+        // validate the ReCaptcha, if something is wrong, we throw an Exception,
         // i.e. code stops executing and goes to catch() block
         
         if (!isset($_POST['g-recaptcha-response'])) {
@@ -40,9 +43,11 @@ try {
         }
 
         // do not forget to enter your secret key from https://www.google.com/recaptcha/admin
+        
         $recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
         
         // we validate the ReCaptcha field together with the user's IP address
+        
         $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
         if (!$response->isSuccess()) {
@@ -50,7 +55,7 @@ try {
         }
         
         // everything went well, we can compose the message, as usually        
-        $emailText = "&#11088; Contact Form Message (SmBernard.Tech.com) &#11088;\n=================================================\n";
+        $emailText = "&#11088; Contact Form Message (mojopipixie.com) &#11088;\n=================================================\n";
 
         foreach ($_POST as $key => $value) {
             // If the field exists in the $fields array, include it in the email
@@ -59,7 +64,7 @@ try {
             }
         }
     
-        // All the necessary headers for the email.
+        // All the neccessary headers for the email.
         $headers = array('Content-Type: text/plain; charset="UTF-8";',
             'From: ' . $from,
             'Reply-To: ' . $from,

@@ -1,6 +1,5 @@
 /*=========== TABLE OF CONTENTS ===========
 ###Preloader
-a. Cookie Consent Modal
 1. Smooth scrolling 
 2. superfish: Initiate on nav menu
   // Mobile Navigation
@@ -12,29 +11,39 @@ a. Cookie Consent Modal
   // jQuery counterUp
 3. Scroll Top link
 4. owl carousel
+
+
+$(document).ready(function() {
+    //Preloader
+    $(window).on("load", function() {
+        preloaderFadeOutTime = 500
+
+        function hidePreloader() {
+            var preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+    });
+});
+
+
 ======================================*/
 
-// ###Preloader
+
 $(window).on('load', function() { // makes sure the whole site is loaded 
     $('#status').fadeOut(); // will first fade out the loading animation 
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
     $('body').delay(350).css({ 'overflow': 'visible' });
 })
 
-// a. Cookie Consent Modal
-$(document).ready(function(){
-    $('#myModal').modal({
-        backdrop: 'static',
-        keyboard: false
-    });
-});
+
 
 // 1. Smooth scrolling
 $(document).ready(function() {
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                let target = $(this.hash);
+                var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
                 if (target.length) {
@@ -66,7 +75,7 @@ $(document).ready(function() {
 
     // Mobile Navigation
     if ($('#nav-menu-container').length) {
-        let $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav' });
+        var $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav' });
         $mobile_nav.find('> ul').attr({ 'class': '', 'id': '' });
         $('body').append($mobile_nav);
         $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
@@ -86,7 +95,7 @@ $(document).ready(function() {
         });
 
         $(document).click(function(e) {
-            let container = $("#mobile-nav, #mobile-nav-toggle");
+            var container = $("#mobile-nav, #mobile-nav-toggle");
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 if ($('body').hasClass('mobile-nav-active')) {
                     $('body').removeClass('mobile-nav-active');
@@ -103,6 +112,7 @@ $(document).ready(function() {
     $("#header").sticky({ topSpacing: 0, zIndex: '50' });
 
     // Counting numbers
+
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 1000
@@ -115,7 +125,7 @@ $(document).ready(function() {
     // Background image via data tag
     $('[data-block-bg-img]').each(function() {
         // @todo - invoke backstretch plugin if multiple images
-        let $this = $(this),
+        var $this = $(this),
             bgImg = $this.data('block-bg-img');
 
         $this.css('backgroundImage', 'url(' + bgImg + ')').addClass('block-bg-img');
@@ -127,7 +137,7 @@ $(document).ready(function() {
             delay: 20,
         });
     }
-    
+
     // 3. Scroll Top link
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -147,6 +157,7 @@ $(document).ready(function() {
     // 4. owl carousel
 
     // i. skill (carousel)
+
     $('#skill').owlCarousel({
         items: 6,
         loop: true,

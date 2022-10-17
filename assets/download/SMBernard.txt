@@ -1,13 +1,18 @@
+
 SUSAN M BERNARD
 FULL-STACK DEVELOPER 
+6829 Creekwood Dr.
+Douglasville, GA
+30135
+470.429.8556
+susanmbernard@gmail.com        
+Greater Atlanta Area
+linkedin.com/in/SmBernardTech	 
+github.com/SmBernardTech
+https://smbernard.tech/
 
- 	susanmbernard@gmail.com        
- 	470.429.8556
- 	Greater Atlanta Area
-  linkedin.com/in/SmBernardTech	 
-  github.com/SmBernardTech
- 	https://smbernard.tech/
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
 
 SKILLS
 
@@ -27,63 +32,68 @@ IDE:
 Android Studio, Eclipse, JetBrains, Visual Studio
 
 VERSION CTRL/CODE MGT: 
-Git, GitHub, BitBucket, 
-Content Management Systems
+Git, GitHub, BitBucket
+
+CONTENT MANAGEMENT SYSTEMS: 
+WordPress, Wix, Weebly
 
 DESIGN, UI, UX: 
-AdobeXD, Inkscape, Lucidchart, Miro, Paint.net, Visio
+Inkscape, Paint.net, Lucidchart, Miro, Visio, AdobeXD 
 
 DEVELOPMENT: 
 SDLC, Agile
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------
 
 EXPERIENCE 
 
-Full-Stack Developer / Web Designer
 FINE TECHNOLOGY SOLUTIONS
-2017 â€“ current     Local & Remote
+Full-Stack Developer / Web Designer
+2017 – current     Local & Remote
 > Communicate with clients to gather requirements, concepts, & details.
 > Render client concepts into user flows, user stories, mock-ups, wire-frames, & prototypes.
-> Design logos for clientsâ€™ print & digital products.
-> Register domains, procure SSL certificates, set up personalized client emails, & set up hosting and Git repo.
-> Build responsive, accessible, & dynamic websites that meet or exceed ADA/WCAG accessibility standards.
+> Design logos for clients’ print & digital products.
+> Register domains, procure SSL certificates, set up client emails, & set up hosting and Git repo.
+> Build responsive, accessible, & dynamic websites that meet/exceed ADA/WCAG standards.
 > Analyze user requirements to derive technical software design & performance requirements.
 > Develop code following common security practices & development design patterns.
 > Write structured, tested, readable, & maintainable code.
 > Troubleshoot, analyze, diagnose, & debug functionality issues.
 > Suggest improvements to product designs & functionality as informed by UX/UI reporting.
 > Inform clients throughout development process.
-> Provide client website/application onboarding.
-> Elicit sales through client education. 
+> Provide client website/application onboarding & elicit sales through client education. 
 
+BRIGHTEN ACADEMY CHARTER SCHOOL
 Media Specialist Paraprofessional
-BRIGHTEN ACADEMY CHARTER 
-2012 â€“ 2013     Douglasville, GA
+2012 – 2013     Douglasville, GA
 Perform computer/network admin, security, troubleshooting & provide technology education & training of staff/students.
 
-Internet Assessor
 LIONBRIDGE TECHNOLOGIES, INC.
-2008 â€“ 2012     Remote
+Internet Assessor
+2008 – 2012     Remote
 Analyze & evaluate text, web pages, images, maps, etc. for appropriateness to web search terms for a leading search engine.
 
 
+UNIVERSITY OF WEST GEORGIA / GEORGIA TECH
 Researcher / Transcriptionist
-GEORGIA TECH / UNIVERSITY OF WEST GEORGIA
-2003 â€“ 2008       Douglasville, GA
-Perform research & transcription services for Dr. Kareen Malone, at Georgia Tech, under NSF grant.
+2003 – 2008       Douglasville, GA
+Perform research & transcription services for Dr. Kareen Malone, at UWG, under GT NSF grant.
 
-Server/Cashier
 CORNER CAFE
-2003 â€“ 2008       Carrollton, GA
+Server/Cashier
+2003 – 2008       Carrollton, GA
 Customer service & sales, collections, and staff training.
 
-Hospital Corpsman
 US NAVY
-1993 â€“ 1998       
+Hospital Corpsman
+1993 – 1998       
 Served in a variety of roles, including Neuro-Psychiatric technician, Active duty and Family Medicine clinic administrator, and interim Department Head Secretary of Minor Surgery Clinic.
 
 **DD214 available upon request.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------
 
 EDUCATION
 	
@@ -110,9 +120,11 @@ Utah State University
 
 Bachelor of Arts
 PSYCHOLOGY
-University of West Georgia Honorâ€™s College
+University of West Georgia Honor’s College
  	2006     GPA 3.7     Cum Laude
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------
 
 AWARDS 		
 
@@ -120,9 +132,13 @@ AWARDS
 > Joint Meritorious Unit Award for exceptionally meritorious achievement.
 > Humanitarian Service Medal for meritorious assistance provided during Operation Sea Signal.
 > National Defense Service Medal for honorable service during Persian Gulf War period.
-> Coast Guard Special Operations Service Ribbon for meritorious service involving multiple agencies.
+> Coast Guard Special Ops Service Ribbon for meritorious service involving multiple agencies.
 > Coast Guard Meritorious Unit Award for support of Coast Guard operations.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------
 
 REFERENCES AVAILABLE UPON REQUEST	
-	
+
+---------------------------------------------------------------------------------------------
+
