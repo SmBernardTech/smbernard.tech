@@ -6,8 +6,7 @@
 ### My background and skills merge artistic creativity with technical execution, in order to bring innovative and inspired solutions to your team or project.
                 
 * UI/UX Design
-* Web Design & Development 
-* White Hat SEO			
+* Web Design & Development
 * Software Development
 * Android App Development
 * UML & Project Development
