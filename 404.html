@@ -1,0 +1,376 @@
+<!doctype html>
+<!-- © 2026 Susan M Bernard. All rights reserved. Not licensed for copying, reuse, or redistribution. -->
+<!-- Paths: Relative, so this opens from disk & works for missing URLs at site root. One nested a folder deep loads unstyled. Never use <base href="/">: it rewrites fragment links too & breaks the skip link. -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Susan M Bernard: Page Not Found</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="That page could not be found on smbernard.tech. Links to the home page, work samples, and contact details."
+    />
+    <meta
+      name="author"
+      content="Susan M Bernard"
+    />
+    <!-- Robots: Never index an error page, do follow its links out -->
+    <meta
+      name="robots"
+      content="noindex, follow"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/image/ico/favicon.ico"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/image/ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/image/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/image/ico/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="assets/image/site/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="assets/image/ico/safari-pinned-tab.svg"
+      color="#8aacaf"
+    />
+    <meta
+      name="msapplication-TileColor"
+      content="#8aacaf"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dr+Sugiyama|Montserrat|Open+Sans&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS File -->
+    <link
+      href="assets/lib/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- v4 shims: keeps older fa-* icon names working -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css"
+    />
+
+    <!-- Main Stylesheet File -->
+    <link
+      href="assets/css/style.css"
+      rel="stylesheet"
+    />
+
+    <!-- =======================================================
+        Author: SmBernard Tech
+      ======================================================= -->
+  </head>
+
+  <body>
+    <!-- Link: Skip to content, first tab stop on page -->
+    <a
+      class="skip-link"
+      href="#main"
+      >Skip to content</a
+    >
+
+    <!-- Preloader -->
+    <div
+      id="preloader"
+      aria-hidden="true"
+    >
+      <div id="status">&nbsp;</div>
+    </div>
+
+    <!-- ================================ Page Content ================================ -->
+
+    <!-- ================================ #hero ======================================= -->
+    <!-- Labelled Region: Banner sits above header, so needs own landmark -->
+    <section
+      class="hero hero-compact"
+      role="region"
+      aria-label="Introduction"
+    >
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="hero">
+              <img
+                alt="SmBernard Tech logo light"
+                src="assets/image/logo/heroLogo-light.svg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <h1>SUSAN M BERNARD</h1>
+          <p class="tagline">Full-Stack Developer</p>
+        </div>
+      </div>
+    </section>
+    <!-- ================================ end of hero section ========================= -->
+
+    <!-- ================================ #header ===================================== -->
+    <header id="header">
+      <div class="container">
+        <div
+          id="logo"
+          class="pull-left"
+        >
+          <a href="index.html"
+            ><img
+              src="assets/image/logo/logo-nav-white2.svg"
+              alt="SmBernard Tech Logo"
+              title="SmBernard Tech Logo"
+          /></a>
+        </div>
+
+        <!--==================== #nav-menu-container ====================-->
+        <nav
+          id="nav-menu-container"
+          aria-label="Main"
+        >
+          <ul class="nav-menu pull-right">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="work-samples.html">Work</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ================================ end of Header section ======================= -->
+
+    <!-- ================================ #main ======================================= -->
+    <main id="main">
+      <!-- ================================ #notfound =================================== -->
+      <section
+        class="notfound"
+        id="notfound"
+      >
+        <div class="container text-center">
+          <p class="notfound-code">404</p>
+          <h2>&#9884; Page Not Found &#9884;</h2>
+          <p>
+            That page isn't here. It was probably moved or renamed, or the link
+            that brought you here has a typo in it.
+          </p>
+          <p
+            class="notfound-orn"
+            aria-hidden="true"
+          >
+            &#10048;&#10047;&#10048;&#10047;&#10048;
+          </p>
+          <p>Here's where to go instead.</p>
+
+          <!-- Buttons: Ways out of the error page -->
+          <div class="notfound-links">
+            <a
+              class="btn btn-full hero-btn m-2"
+              href="index.html"
+              ><i
+                class="fa-solid fa-house"
+                aria-hidden="true"
+              ></i
+              >Home</a
+            >
+            <a
+              class="btn btn-full hero-btn m-2"
+              href="work-samples.html"
+              ><i
+                class="fa-solid fa-code"
+                aria-hidden="true"
+              ></i
+              >Work Samples</a
+            >
+            <a
+              class="btn btn-full hero-btn m-2"
+              href="index.html#contact"
+              ><i
+                class="fa-solid fa-address-card"
+                aria-hidden="true"
+              ></i
+              >Contact</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- ================================ end of notfound section ===================== -->
+    </main>
+    <!-- ================================ end of main ================================= -->
+
+    <!-- ================================ footer ====================================== -->
+    <footer class="site-footer">
+      <div class="bottom">
+        <div class="container">
+          <div class="footer-row">
+            <a
+              class="footer-logo"
+              href="index.html"
+            >
+              <img
+                src="assets/image/logo/logo-nav3.svg"
+                alt="SmBernard Tech Logo"
+                title="SmBernard Tech Logo"
+              />
+            </a>
+
+            <!-- Nav: Footer icon links -->
+            <nav
+              class="footer-icons"
+              aria-label="Footer"
+            >
+              <a href="index.html"
+                ><i
+                  class="fa-solid fa-house"
+                  aria-hidden="true"
+                ></i
+                ><span>Home</span></a
+              >
+              <a href="index.html#about"
+                ><i
+                  class="fa-solid fa-circle-info"
+                  aria-hidden="true"
+                ></i
+                ><span>About</span></a
+              >
+              <a href="index.html#skills"
+                ><i
+                  class="fa-solid fa-brain"
+                  aria-hidden="true"
+                ></i
+                ><span>Skills</span></a
+              >
+              <a href="index.html#education"
+                ><i
+                  class="fa-solid fa-user-graduate"
+                  aria-hidden="true"
+                ></i
+                ><span>Education</span></a
+              >
+              <a href="index.html#portfolio"
+                ><i
+                  class="fa-solid fa-briefcase"
+                  aria-hidden="true"
+                ></i
+                ><span>Portfolio</span></a
+              >
+              <a href="work-samples.html"
+                ><i
+                  class="fa-solid fa-code"
+                  aria-hidden="true"
+                ></i
+                ><span>Work</span></a
+              >
+              <a href="index.html#contact"
+                ><i
+                  class="fa-solid fa-address-card"
+                  aria-hidden="true"
+                ></i
+                ><span>Contact</span></a
+              >
+              <span
+                class="footer-divider"
+                aria-hidden="true"
+              ></span>
+              <a
+                href="https://www.linkedin.com/in/smbernardtech/"
+                target="_blank"
+                rel="noopener"
+                ><i
+                  class="fa-brands fa-linkedin"
+                  aria-hidden="true"
+                ></i
+                ><span>LinkedIn</span></a
+              >
+              <a
+                href="https://github.com/smbernardtech"
+                target="_blank"
+                rel="noopener"
+                ><i
+                  class="fa-brands fa-github"
+                  aria-hidden="true"
+                ></i
+                ><span>GitHub</span></a
+              >
+            </nav>
+          </div>
+
+          <p class="copyright-text">
+            SmB
+            <span>
+              &copy;
+              <!-- Get Current Copyright Year -->
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights Reserved
+            </span>
+          </p>
+        </div>
+      </div>
+      <!-- Link: Back to top, fixed position; renders same wherever it sits -->
+      <a
+        class="scrolltop"
+        href="#top"
+        aria-label="Back to top"
+        ><span
+          class="fa fa-angle-up"
+          aria-hidden="true"
+        ></span
+      ></a>
+    </footer>
+    <!-- ================================ end of footer =============================== -->
+
+    <!-- ============================ end of Page Content ============================= -->
+
+    <!-- ================================ Required JavaScript Libraries =============== -->
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <!-- ================================ Custom Javascript File ======================= -->
+    <script src="assets/js/custom.js"></script>
+    <!-- ================================ Cookie Notice ================================ -->
+    <script src="assets/js/cookie-notice.js"></script>
+  </body>
+</html>

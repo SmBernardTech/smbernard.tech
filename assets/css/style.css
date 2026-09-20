@@ -5,7 +5,7 @@
 2.  Hero
 3.  Header
         ##nav-menu
-        ##nav-menu arrows
+
         ##nav-menu-container
         ##navbar-brand	
         ##mobile-nav
@@ -14,7 +14,6 @@
 		##owl-carousel
 6.  Education
 7.  Call To Action (cta)
-7a. CtA as Break (ctaAB)
 8.  Portfolio
 9.  Contact
 		##contact-form
@@ -22,7 +21,9 @@
         ##copyright-text
         ##social-nav
 11. Scrolltop
-12. Responsive
+12. Page Not Found
+13. Responsive
+14. Reduced Motion
 ============================================ */
 
   /* ============================================
@@ -32,6 +33,18 @@
         body {
             overflow: hidden;
         }
+
+        /* No scripting: Nothing lifts the lock, so never set it */
+        @media (scripting: none) {
+            body {
+                overflow: visible;
+            }
+
+            #preloader {
+                display: none;
+            }
+        }
+
         /* Preloader */
         #preloader {
           position: fixed;
@@ -64,35 +77,42 @@
         }
 
         /* ============================================
-          #Cookie Consent Modal
+          #Cookie Notice
          ============================================ */
-        .modal-header {
-          background-color: #cddbdc;
+        .cookie-notice {
+          align-items: center;
+          background-color: #343737;
+          bottom: 0;
+          box-shadow: 0 -3px 15px rgba(0, 0, 0, .2);
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px 24px;
+          justify-content: center;
+          left: 0;
+          padding: 12px 20px;
+          position: fixed;
+          right: 0;
+          z-index: 1000;
         }
 
-        .modal-body {
-          background-color: #cddbdc;
+        .cookie-notice p {
+          color: #dde7e8;
+          font-size: 16px;
+          margin: 0;
+          text-align: center;
         }
 
-        .modal-body p {
-          font-family: 'Lato', sans-serif;
-          font-size: 18px;
+        .cookie-notice a {
+          color: #8aacaf;
+          text-decoration: underline;
         }
 
-        .learn-more {
-          text-decoration: none;
-          color: #282F47;
-          margin-top: 8px;
+        .cookie-notice a:hover {
+          color: #fff;
         }
 
-        .learn-more:hover {
-          font-style: italic;
-          color: #59898d;
-          margin-top: 8px;
-        }
-
-        .modal-footer {
-          background-color: #cddbdc;
+        .cookie-notice .btn {
+          padding: 8px 32px;
         }
 
  /* ==================================
@@ -141,36 +161,56 @@
             transition: 0.5s;
         }
 
+        /* Smooth scroll: Browser's job now, not jQuery's. Follows reduced-motion on its own. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Anchor targets: leave room for the sticky header on jumps from other pages */
+        [id] {
+            scroll-margin-top: 90px;
+        }
+
 /*-------------------------------------
 	##Elements
 --------------------------------------*/
         
         .btn {
-            background-color: #59898d;
+            background-color: #477378;
             font-family: "Roboto", Helvetica, Arial, sans-serif;
             font-weight: 800;
             color: #fff;
             padding: 15px 45px;
             border-radius: 50px;
+            /* Pop: dark drop shadow under the button & a soft shadow on the text, like the section headings */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+            -webkit-transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
         }
         
         .btn:hover {
             background-color: #464D5C;
             color: #fff;
+            box-shadow: 0 7px 16px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
         }
         
-        .btn:focus {
+        /* Focus: replace Bootstrap's blue ring; mouse clicks show nothing extra, keyboard users get a light teal ring */
+        .btn:focus,
+        .btn.focus {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
             color: #fff;
+            outline: none;
+        }
+
+        .btn:focus-visible {
+            box-shadow: 0 0 0 3px #cddbdc, 0 4px 10px rgba(0, 0, 0, 0.35);
         }
         
+        /* Ghost button now matches every other button (the white outline & inverted hover were removed) */
         .btn-ghost {
-            border: 3px solid #fff;
-            background-color: #59898d;
-        }
-        
-        .btn-ghost:hover {
-            background-color: #fff;
-            color: #59898d;
+            background-color: #477378;
         }
         
         section {
@@ -182,10 +222,9 @@
             padding: 0;
             border: 0;
             border-radius: 0;
-            /*margin: 0;*/
             margin-bottom: 25px;
             overflow: hidden;
-            background: #59898d;
+            background: #477378;
             box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
         }
         
@@ -193,7 +232,37 @@
             text-decoration: none !important;
             color: #464D5C;
         }
-        
+
+        /* Skip link: First tab stop, visible only while focused */
+        .skip-link {
+            background: #303e4f;
+            color: #fff;
+            font-family: "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            left: 8px;
+            letter-spacing: .08em;
+            padding: 12px 20px;
+            position: fixed;
+            text-transform: uppercase;
+            top: 8px;
+            transform: translateY(-150%);
+            z-index: 1100;
+        }
+
+        .skip-link:focus {
+            color: #fff;
+            outline: 3px solid #cddbdc;
+            outline-offset: 2px;
+            transform: translateY(0);
+        }
+
+        /* Fallback focus ring: Anything without its own keyboard style */
+        :focus-visible {
+            outline: 3px solid #477378;
+            outline-offset: 2px;
+        }
+
  /* ==================================
     2. Hero
  ==================================== */
@@ -214,7 +283,8 @@
             content: '';
             z-index: 0;
             position: absolute;
-            /* background: rgba(0, 0, 0, 0.65); */
+            /* Scrim: Photo has bright patches, white text drops under 2:1 unaided */
+            background: rgba(0, 0, 0, 0.5);
             width: 100%;
             height: 100%;
             left: 0;
@@ -246,14 +316,51 @@
         .tagline {
             font-family: "Raleway", "Montserrat", Helvetica, Arial, sans-serif;
             font-size: 26px;
-            margin: 45px 0 75px 0;
+            margin: 45px 0 36px 0;
             color: #fff;
+        }
+
+        /* Hero buttons: equal widths, clean caps like the nav, icon before the label */
+        .hero-btn {
+            align-items: center;
+            display: inline-flex;
+            font-family: "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            gap: 10px;
+            justify-content: center;
+            letter-spacing: 0.1em;
+            min-width: 190px;
+            padding: 13px 24px;
+            text-transform: uppercase;
+        }
+
+        .hero-btn i {
+            font-size: 15px;
         }
         
         #hero img {
             padding: 0;
             margin: 0;
             max-height: 425px;
+        }
+
+        /* Compact variant: Work samples & not-found pages */
+        .hero.hero-compact {
+            height: auto;
+            padding: 70px 0 60px;
+        }
+
+        .hero-compact #hero img {
+            max-height: 220px;
+        }
+
+        .hero-compact h1 {
+            margin-bottom: 0;
+        }
+
+        .hero-compact .tagline {
+            margin: 20px 0 0;
         }
         
 
@@ -262,8 +369,12 @@
  ==================================== */
         
         #header {
-            background: #59898d;
+            background: #477378;
             height: 70px;
+            /* Replaces sticky.js: Stays in flow, so no wrapper div & no height jump */
+            position: sticky;
+            top: 0;
+            z-index: 50;
             /* might need to take the one below out */
             box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
         }
@@ -352,26 +463,58 @@
         }
         
         .nav-menu a {
-            padding: 22px 15px 18px 15px;
-            text-decoration: none;
-            display: inline-block;
+            /* Solid white: At 88% these sat under 4.5:1, even on the darker teal */
             color: #fff;
+            display: inline-block;
             font-family: "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-            outline: none;
-            /* margin-left: 15px; */
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: .08em;
+            line-height: 70px;
+            padding: 0 14px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
         }
-        
-        .nav-menu a:hover,
-        .nav-menu li:hover>a,
+
+        /* Focus: Mouse clicks show nothing, keyboard gets a light ring */
+        .nav-menu a:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .nav-menu a:focus-visible {
+            outline: 3px solid #cddbdc;
+            outline-offset: -3px;
+        }
+
+        /* Underline: short bar under the word, faint on hover, solid for the current page or section */
+        .nav-menu>li>a::after {
+            background: #fff;
+            bottom: 20px;
+            content: "";
+            height: 2px;
+            left: 14px;
+            opacity: 0;
+            position: absolute;
+            right: 14px;
+            transition: opacity .3s;
+        }
+
+        .nav-menu>li>a:hover,
         .nav-menu .menu-active>a {
-            color: #464D5C;
+            color: #fff;
+        }
+
+        .nav-menu>li>a:hover::after {
+            opacity: .5;
+        }
+
+        .nav-menu .menu-active>a::after {
+            opacity: 1;
         }
         
         .nav-menu ul {
             margin: 4px 0 0 15px;
-            /* -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08); */
         }
 
         .nav-menu ul {
@@ -388,7 +531,7 @@
         }
         
         .nav-menu ul li:hover {
-            background: #59898d;
+            background: #477378;
             -webkit-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s;
@@ -411,40 +554,21 @@
         }
 
 /*-------------------------------------
-	##nav-menu arrows
---------------------------------------*/
-        
-        .sf-arrows .sf-with-ul {
-            padding-right: 30px;
-        }
-        
-        .sf-arrows .sf-with-ul:after {
-            content: "\f107";
-            position: absolute;
-            right: 15px;
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-        }
-        
-        .sf-arrows ul .sf-with-ul:after {
-            content: "\f105";
-        }
-
-/*-------------------------------------
 	##nav-menu-container
 --------------------------------------*/
         
         #nav-menu-container {
             margin: 0;
         }
-        /* .pull-right {
-        float: right;
-    }
-    
-    .pull-left {
-        float: left;
-    } */
+
+        /* Header layout: logo left, nav right (these used to come from Font Awesome 4) */
+        .pull-right {
+            float: right;
+        }
+
+        .pull-left {
+            float: left;
+        }
 
 /*-------------------------------------
 	##navbar-brand
@@ -477,7 +601,7 @@
         
         .navbar-branda:focus,
         .navbar-branda:hover {
-            color: #59898d;
+            color: #477378;
         }
 
 /*-------------------------------------
@@ -497,10 +621,18 @@
             -webkit-transition: all 0.4s;
             -o-transition: all 0.4s;
             transition: all 0.4s;
-            outline: none;
             cursor: pointer;
         }
-        
+
+        #mobile-nav-toggle:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        #mobile-nav-toggle:focus-visible {
+            outline: 3px solid #cddbdc;
+            outline-offset: 2px;
+        }
+
         #mobile-nav-toggle i {
             color: #fff;
         }
@@ -539,10 +671,19 @@
             text-decoration: none;
             width: 100%;
             display: block;
+        }
+
+        #mobile-nav ul li a:focus:not(:focus-visible) {
             outline: none;
         }
+
+        #mobile-nav ul li a:focus-visible {
+            outline: 3px solid #cddbdc;
+            outline-offset: -3px;
+        }
         
-        #mobile-nav ul li a:hover {
+        #mobile-nav ul li a:hover,
+        #mobile-nav ul .menu-active>a {
             color: #fff;
         }
         
@@ -560,11 +701,11 @@
         }
         
         #mobile-nav ul .menu-has-children i.fa-chevron-up {
-            color: #59898d;
+            color: #477378;
         }
         
         #mobile-nav ul .menu-item-active {
-            color: #59898d;
+            color: #477378;
         }
         
         #mobile-body-overly {
@@ -599,12 +740,19 @@
             background: #dde7e8;
             box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
         }
+
+        /* Letterpress heading: white highlight under the letters plus a soft drop shadow */
+        .about h2 {
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85), 0 3px 6px rgba(0, 0, 0, 0.25);
+        }
         
         .about p {
             color: #080d0e;
             font-size: 30px;
             text-align: center;
             margin: 35px;
+            /* Even line lengths now that the paragraphs no longer use manual line breaks */
+            text-wrap: balance;
         }
         
         .about img {
@@ -625,6 +773,8 @@
             margin-bottom: 85px;
             color: #dde7e8;
             font-weight: 800;
+            /* Trial: same dark glow as Education & Portfolio, to compare */
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.9), 0 0 14px rgba(0, 0, 0, 0.8), 0 2px 3px rgba(0, 0, 0, 0.9);
         }
         
         .skills .skill-area .owl-carousel .owl-item img {
@@ -633,6 +783,38 @@
             height: auto;
             border-radius: 0;
             margin-bottom: 25px;
+        }
+
+        /* Pause control: Strip moves on its own, needs a stop */
+        .skill-controls {
+            text-align: center;
+        }
+
+        .skill-pause {
+            align-items: center;
+            background: transparent;
+            border: 2px solid #8aacaf;
+            color: #dde7e8;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            gap: 8px;
+            letter-spacing: .1em;
+            padding: 8px 22px;
+            text-transform: uppercase;
+            transition: background-color .3s, color .3s;
+        }
+
+        .skill-pause:hover {
+            background: #8aacaf;
+            color: #1d2530;
+        }
+
+        .skill-pause:focus-visible {
+            outline: 3px solid #dde7e8;
+            outline-offset: 2px;
         }
 
 /* ==================================
@@ -651,12 +833,33 @@
             height: auto;
         }
         
+        /* Scrim: Damask has bright spots, heading fell to 1.3:1. Fading band
+           covers the heading only, cards below keep the plain background. */
+        .education::before {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0) 100%);
+            content: "";
+            height: 240px;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0;
+        }
+
+        .education > .container {
+            position: relative;
+            z-index: 1;
+        }
+
         .education h2 {
             font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-size: 32px;
             margin-bottom: 50px;
             color: #dde7e8;
             font-weight: 800;
+            /* Dark glow so the heading reads over the busy damask background */
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.9), 0 0 14px rgba(0, 0, 0, 0.8), 0 2px 3px rgba(0, 0, 0, 0.9);
         }
         
         .education p {
@@ -709,31 +912,109 @@
         }
         
         .education .card:hover .card-title-wrap {
-            background-color: #59898d;
+            background-color: #477378;
             text-align: center;
         }
         
         .education .card:hover .card-title-wrap .card-title,
-        .education .card:hover .card-title-wrap .card-text {
+        .education .card:hover .card-title-wrap .card-text,
+        .education .card:hover .card-title-wrap .card-degree {
             color: #fff;
             text-align: center;
         }
 
         .education .education-over {
-            padding-top: 45px;
-            position: absolute;
-            width: 100%;
+            /* Dark slate overlay, text centered over the seal area (bottom padding clears the name bar) */
+            align-items: center;
+            background: rgba(48, 62, 79, 0.9);
+            display: flex;
+            flex-direction: column;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            top: 0;
+            justify-content: center;
             left: 0;
-            text-align: center;
             opacity: 0;
-            visibility: hidden;
+            padding: 0 20px 64px;
+            position: absolute;
+            text-align: center;
+            top: 0;
             -webkit-transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
+            visibility: hidden;
+            width: 100%;
+        }
+
+        /* Plain spans, not headings: Title nothing & only exist on hover */
+        .education .education-over .ed-line {
+            color: #fff;
+            display: block;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 1.35;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Overlay hierarchy: small degree type & a short rule, bold program, lighter notes & GPA */
+        .education .education-over .ed-line:first-child {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            opacity: 0.8;
+        }
+
+        .education .education-over .ed-line:first-child::after {
+            background: #8aacaf;
+            content: "";
+            display: block;
+            height: 2px;
+            margin: 12px auto 14px;
+            width: 40px;
+        }
+
+        .education .education-over .ed-line.ed-note {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            margin-top: 6px;
+            opacity: 0.85;
+        }
+
+        .education .education-over .ed-line:last-child {
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            margin-top: 14px;
+            opacity: 0.85;
+        }
+
+        /* Blur the seal on hover so its baked-in text doesn't clash with the overlay text */
+        .education .card .education-img {
+            -webkit-transition: filter 0.3s ease, transform 0.3s ease;
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+
+        .education .card:hover .education-img {
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+            transform: scale(1.06);
+        }
+
+        /* Degree line under the school name: hidden where hover works, shown on touch screens */
+        .education .card-title-wrap .card-degree {
+            color: #666;
+            display: none;
+            font-family: "Raleway", "Montserrat", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        @media (hover: none) {
+            .education .card-title-wrap .card-degree {
+                display: block;
+            }
         }
         
         .education .card-title-wrap {
@@ -799,22 +1080,6 @@
         }
         
 /* ==================================
-    7a. CtA as Break (ctaAB)
- ==================================== */
-
-        .ctaAB {
-          background-color: #343737;
-          box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
-          padding: 15px;
-          margin-top: 10px;
-          margin-bottom: 10px;
-        }
-        .ctaAB h2 {
-          margin-bottom: 5px;
-          font-weight: 800;
-        }
-
-/* ==================================
     8. Portfolio
  ==================================== */
         
@@ -834,12 +1099,33 @@
             color: #fff;
         }
         
+        /* Scrim: Same fading band as Education, same reason */
+        .portfolio::before {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0) 100%);
+            content: "";
+            height: 190px;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0;
+        }
+
+        .portfolio > .container,
+        .portfolio .portfolio-grid {
+            position: relative;
+            z-index: 1;
+        }
+
         .portfolio h2 {
             font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-size: 30px;
             font-weight: 800;
             margin-bottom: 25px;
             color: #dde7e8;
+            /* Dark glow so the heading reads over the busy damask background */
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.9), 0 0 14px rgba(0, 0, 0, 0.8), 0 2px 3px rgba(0, 0, 0, 0.9);
         }
         
         .portfolio-grid {
@@ -856,6 +1142,15 @@
         
         .portfolio-grid .row>div .card img {
             width: 100%;
+            -webkit-transition: filter 0.3s ease, transform 0.3s ease;
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Blur the tile image on hover so the overlay text reads cleanly, matching the Education cards */
+        .portfolio-grid .row>div .card:hover img {
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+            transform: scale(1.06);
         }
         
         .portfolio-grid .row>div .card .portfolio-over {
@@ -864,7 +1159,8 @@
             vertical-align: middle;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            /* Dark slate overlay, matching the Education cards */
+            background: rgba(48, 62, 79, 0.9);
             top: 0;
             left: 0;
             text-align: center;
@@ -901,6 +1197,36 @@
             visibility: visible;
         }
 
+        /* Touch screens can't hover: always show each tile's title on a slate fade at the bottom */
+        @media (hover: none) {
+            .portfolio-grid .row>div .card .portfolio-over {
+                background: linear-gradient(to top, rgba(48, 62, 79, 0.95) 0%, rgba(48, 62, 79, 0.7) 30%, rgba(48, 62, 79, 0) 60%);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .portfolio-grid .row>div .card .portfolio-over>div {
+                bottom: 10px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: auto;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
+
+            .portfolio-grid .row>div .card .portfolio-over .card-text {
+                display: none;
+            }
+
+            .portfolio-grid .row>div .card:hover img {
+                -webkit-filter: none;
+                filter: none;
+                transform: none;
+            }
+        }
+
 /* ==================================
     9. Contact
  ==================================== */
@@ -910,17 +1236,6 @@
             background-color: #cddbdc;
             padding: 50px 0;
         }
-        /* #contact {
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
-    display: table;
-    position: relative;
-    background-image: url(../image/bg/paisley.jpg);
-    background-repeat: repeat;
-    padding: 50px 0;
-    color: #fff;
-    width: 100%;
-    height: auto;
-} */
         
         #contact h2 {
             font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -928,6 +1243,8 @@
             font-weight: 800;
             margin-bottom: 25px;
             color: #474D5D;
+            /* Letterpress heading: white highlight under the letters plus a soft drop shadow */
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85), 0 3px 6px rgba(0, 0, 0, 0.25);
         }
         
         #contact p {
@@ -936,13 +1253,22 @@
         
         #contact .info i {
             font-size: 32px;
-            color: #59898d;
+            color: #477378;
             float: left;
         }
         
         #contact .info p {
             padding: 0 0 10px 50px;
             line-height: 24px;
+        }
+
+        #contact .info p a {
+            color: #474D5D;
+        }
+
+        /* Hover: Lighter teal fell to 3.7:1 on this panel */
+        #contact .info p a:hover {
+            color: #303e4f;
         }
 
 /* ----------------------------------
@@ -954,7 +1280,7 @@
         }
         
         #contact .form #sendmessage {
-            background-color: #59898d;
+            background-color: #477378;
             border: 1px solid #7aa0a3;
             color: #fff;
             display: none;
@@ -996,8 +1322,15 @@
             box-shadow: none;
         }
         
+        /* Form boxes: site teal focus instead of Bootstrap's blue glow */
+        #contact .form-control:focus {
+            border-color: #477378;
+            box-shadow: 0 0 0 3px rgba(89, 137, 141, 0.3);
+            outline: none;
+        }
+
         #contact .form button[type="submit"] {
-            background-color: #59898d;
+            background-color: #477378;
             font-family: "Roboto", Helvetica, Arial, sans-serif;
             font-weight: 800;
             color: #fff;
@@ -1011,10 +1344,6 @@
         #contact .form button[type="submit"]:hover {
             background: #474D5D;
         }
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        
         body,
         .form-control {
             font-family: 'Lato', sans-serif;
@@ -1035,14 +1364,12 @@
             margin-bottom: 20px;
         }
         
+        /* Error text: Old #ff5050 sat at 2.3:1 on this panel */
         .help-block.with-errors {
-            color: #ff5050;
+            color: #a32020;
+            font-weight: 600;
             margin-top: 5px;
         }
-
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 /* ==================================
     10. Footer 
@@ -1097,7 +1424,7 @@
         }
         
         .site-footer .bottom .list-inline a:hover {
-            color: #59898d;
+            color: #477378;
         }
         
         .site-footer .credits {
@@ -1105,7 +1432,7 @@
         }
         
         .site-footer .credits a {
-            color: #59898d;
+            color: #477378;
         }
         
         .site-footer img {
@@ -1117,6 +1444,83 @@
         .site-footer img:hover,
         .site-footer img:focus {
             opacity: .6;
+        }
+
+/* ----------------------------------
+	##footer-icons
+ ------------------------------------ */
+
+        .site-footer .footer-row {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 30px;
+            justify-content: space-between;
+        }
+
+        .site-footer .footer-icons {
+            align-items: stretch;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            justify-content: center;
+        }
+
+        /* Icon on top, tiny uppercase label underneath */
+        .site-footer .footer-icons a {
+            align-items: center;
+            color: #eef3f3;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 66px;
+            padding: 6px 4px;
+            text-decoration: none;
+        }
+
+        .site-footer .footer-icons a i {
+            font-size: 22px;
+            transition: transform .3s;
+        }
+
+        .site-footer .footer-icons a span {
+            font-family: "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: .1em;
+            opacity: .8;
+            text-transform: uppercase;
+        }
+
+        .site-footer .footer-icons a:hover {
+            color: #8aacaf;
+        }
+
+        .site-footer .footer-icons a:hover i {
+            transform: translateY(-3px);
+        }
+
+        .site-footer .footer-divider {
+            background: rgba(238, 243, 243, .25);
+            margin: 8px 10px;
+            width: 1px;
+        }
+
+        .site-footer .bottom .copyright-text {
+            border-top: 1px solid rgba(238, 243, 243, .2);
+            margin-top: 14px;
+            padding-top: 8px;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            .site-footer .footer-row {
+                justify-content: center;
+            }
+
+            .site-footer .footer-divider {
+                display: none;
+            }
         }
 
 /* ----------------------------------
@@ -1158,7 +1562,7 @@
             width: 42px;
             height: 42px;
             border-radius: 50%;
-            background: #59898d;
+            background: #477378;
             color: #fff;
             text-align: center;
             font-size: 24px;
@@ -1173,7 +1577,79 @@
         }
 
 /* ==================================
-    12. Responsive
+    12. Page Not Found
+ ==================================== */
+
+        /* Full-bleed: Same treatment as Education & Portfolio, reads as part of the site */
+        .notfound {
+            background-image: url(../image/bg/bg3portfolio.jpg);
+            background-size: cover;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+            padding: 80px 0 90px;
+            position: relative;
+            width: 100%;
+        }
+
+        /* 55%: Keeps the lightest text at 4.38:1 over the brightest damask */
+        .notfound::before {
+            background: rgba(0, 0, 0, 0.55);
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .notfound > .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .notfound .notfound-code {
+            color: #cddbdc;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-size: 130px;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            line-height: 1;
+            /* Sides auto: Inherits max-width from .notfound p & pins left otherwise */
+            margin: 0 auto 10px;
+            /* Indent: Matches letter-spacing, keeps the numeral optically centered */
+            text-indent: 0.12em;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.9), 0 0 18px rgba(0, 0, 0, 0.85), 0 3px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        .notfound h2 {
+            color: #dde7e8;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 28px;
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.9), 0 0 14px rgba(0, 0, 0, 0.8), 0 2px 3px rgba(0, 0, 0, 0.9);
+        }
+
+        .notfound p {
+            color: #dde7e8;
+            font-size: 22px;
+            margin: 0 auto;
+            max-width: 620px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+            text-wrap: balance;
+        }
+
+        .notfound .notfound-orn {
+            color: #b6cbcd;
+            font-size: 20px;
+            margin: 22px auto;
+        }
+
+        .notfound-links {
+            margin-top: 34px;
+        }
+
+/* ==================================
+    13. Responsive
  ==================================== */
         
         @media (max-width: 768px) {
@@ -1243,15 +1719,6 @@
                 font-size: 26px;
                 margin: 25px
             }
-            /* .about img {
-            margin-left: 200px;
-            margin-bottom: 10px;          
-            max-height: 300px;
-        }
-        .about p {
-            margin-left: 215px;
-            margin-right: 0;
-        } */
             .education {
                 padding-bottom: 5px;
             }
@@ -1300,6 +1767,18 @@
             }
             .feature-col {
                 padding-bottom: 30px;
+            }
+            .notfound {
+                padding: 55px 0 60px;
+            }
+            .notfound .notfound-code {
+                font-size: 84px;
+            }
+            .notfound h2 {
+                font-size: 24px;
+            }
+            .notfound p {
+                font-size: 18px;
             }
             .portfolio-grid .card h3.card-title {
                 font-size: 18px !important;
@@ -1374,5 +1853,28 @@
             }
             .site-footer .list-inline {
                 font-size: 14px;
+            }
+        }
+
+/* ==================================
+    14. Reduced Motion
+ ==================================== */
+
+        /* System setting: No slides, no fades, no smooth scrolling */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: .01ms !important;
+            }
+
+            .education .card:hover .education-img,
+            .portfolio-grid .row>div .card:hover img {
+                -webkit-filter: none;
+                filter: none;
+                transform: none;
             }
         }

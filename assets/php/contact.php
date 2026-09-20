@@ -1,89 +1,116 @@
 <?php
-// require ReCaptcha class
-require('/home/mojopixie/smbernard.tech/assets/recaptcha/recaptcha-master/src/autoload.php');
+// Contact Form: Honeypot, then Turnstile, then send
 
-// configure
-// an email address that will be in the From field of the email.
+// Config: Secret key lives above the web root, never in this repo
+$configFile = '/home/mojopixie/turnstile-config.php';
+$turnstileSecret = '';
+if (is_readable($configFile)) {
+    require $configFile;
+}
+
+// from: Sent as this address. Keep it on this domain so mail passes sender checks
 $from = 'info@smbernard.tech';
 
-// an email address that will receive the email with the output of the form
+// sendTo: Address that receives the message
 $sendTo = 'info@smbernard.tech';
 
-// subject of the email
-$subject = "New message from website's contact form";
+$subject = 'New message from website contact form';
 
-// form field names and their translations.
-// array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'email' => 'Email', 'phone' => 'Phone', 'message' => 'Message');
+// fields: Form field name => Label used in the email
+$fields = array(
+    'name' => 'Name',
+    'email' => 'Email',
+    'phone' => 'Phone',
+    'message' => 'Message',
+);
 
-// message that will be displayed when everything is OK :)
 $okMessage = '&#10024; Message sent! &#10024; <br> Thanks! I will contact you soon.';
+$errorMessage = '&#9760; There was an error while submitting the form. <br> Please try again later';
 
-// If something goes wrong, we will display this message.
-$errorMessage = '&#10060; There was an error while submitting the form. <br> Please try again later';
-
-// ReCaptcha Secret---Will need to replace testing key with personal secret key---ENTER_SECRET_RECPATCHA_SITEKEY
-$recaptchaSecret = '6Le_9qkUAAAAAMe3CCATCywOuYelXiCcPUoAEG3v';
-
-// let's do the sending
-
-// if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
+// Turn this off with error_reporting(0) if errors ever show up in the response
 error_reporting(E_ALL & ~E_NOTICE);
+
+// verifyTurnstile: One POST to Cloudflare, true only on a clean pass
+function verifyTurnstile($secret, $token, $remoteIp)
+{
+    if ($secret === '' || $token === '') {
+        return false;
+    }
+
+    $ch = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array(
+        'secret' => $secret,
+        'response' => $token,
+        'remoteip' => $remoteIp,
+    )));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    $raw = curl_exec($ch);
+    curl_close($ch);
+
+    if ($raw === false) {
+        return false;
+    }
+
+    $result = json_decode($raw, true);
+
+    return isset($result['success']) && $result['success'] === true;
+}
+
+$responseArray = array('type' => 'danger', 'message' => $errorMessage);
 
 try {
     if (!empty($_POST)) {
+        // Honeypot: Hidden from people, filled in by bots. Report success so the bot moves on
+        if (!empty($_POST['website'])) {
+            $responseArray = array('type' => 'success', 'message' => $okMessage);
+        } else {
+            $token = isset($_POST['cf-turnstile-response']) ? $_POST['cf-turnstile-response'] : '';
 
-        // validate the ReCaptcha, if something is wrong, we throw an Exception,
-        // i.e. code stops executing and goes to catch() block
-        
-        if (!isset($_POST['g-recaptcha-response'])) {
-            throw new \Exception('ReCaptcha is not set.');
-        }
-
-        // do not forget to enter your secret key from https://www.google.com/recaptcha/admin
-        
-        $recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
-        
-        // we validate the ReCaptcha field together with the user's IP address
-        
-        $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
-
-        if (!$response->isSuccess()) {
-            throw new \Exception('ReCaptcha was not validated.');
-        }
-        
-        // everything went well, we can compose the message, as usually        
-        $emailText = "Contact Form Message (smbernard.tech)\n=================================================\n";
-
-        foreach ($_POST as $key => $value) {
-            // If the field exists in the $fields array, include it in the email
-            if (isset($fields[$key])) {
-                $emailText .= "$fields[$key]: $value\n";
+            if (!verifyTurnstile($turnstileSecret, $token, $_SERVER['REMOTE_ADDR'])) {
+                throw new \Exception('&#129302; The robot check did not pass. <br> Please reload the page and try again.');
             }
-        }
-    
-        // All the necessary headers for the email.
-        $headers = array('Content-Type: text/plain; charset=iso-8859-1',
-            'From: ' . $from,
-            'Reply-To: ' . $from,
-            'Return-Path: ' . $from,
-        );
-        
-        // Send email
-        mail($sendTo, $subject, $emailText, implode(PHP_EOL, $headers));
 
-        $responseArray = array('type' => 'success', 'message' => $okMessage);
+            $emailText = "Contact Form Message (smbernard.tech)\n=================================================\n";
+            foreach ($_POST as $key => $value) {
+                // Only the named fields go in the email, so the honeypot and token stay out
+                if (isset($fields[$key])) {
+                    $emailText .= "$fields[$key]: $value\n";
+                }
+            }
+
+            // replyTo: Sender's address, so replying reaches them instead of this inbox.
+            // Falls back to the site address if what they typed does not check out.
+            // From stays on this domain either way, or the mail fails sender checks.
+            $replyTo = $from;
+            $senderEmail = isset($_POST['email']) ? trim($_POST['email']) : '';
+            if (filter_var($senderEmail, FILTER_VALIDATE_EMAIL) && strpbrk($senderEmail, "\r\n") === false) {
+                $replyTo = $senderEmail;
+            }
+
+            $headers = array(
+                'Content-Type: text/plain; charset=iso-8859-1',
+                'From: ' . $from,
+                'Reply-To: ' . $replyTo,
+                'Return-Path: ' . $from,
+            );
+
+            // Checked: A refused send must not report success to the visitor
+            if (!mail($sendTo, $subject, $emailText, implode(PHP_EOL, $headers))) {
+                throw new \Exception($errorMessage);
+            }
+
+            $responseArray = array('type' => 'success', 'message' => $okMessage);
+        }
     }
 } catch (\Exception $e) {
     $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
 }
 
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-
     header('Content-Type: application/json');
-
-    echo $encoded;
+    echo json_encode($responseArray);
 } else {
     echo $responseArray['message'];
 }

@@ -1,327 +1,1227 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--suppress ALL -->
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Susan M Bernard: Full-Stack Developer</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Susan M Bernard is a full-stack developer in the Greater Atlanta Area who builds web apps with JavaScript, TypeScript, Vue, Python, and PostgreSQL, with a focus on accessible, easy-to-use design."
+    />
+    <meta
+      name="author"
+      content="Susan M Bernard"
+    />
+    <!--    <base href = "https://smbernard.tech/" />-->
 
-<head>
-    <meta charset="utf-8"/>
-    <title>Susan M Bernard: Full Stack Web Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Susan Bernard: Freelance Full Stack Developer using Wordpress, Bootstrap, HTML, CSS, Javascript, Java, Node.js, Python, PhP, and more!" />
-    <meta name="author" content="Susan M Bernard">
-<!--    <base href = "https://smbernard.tech/" />-->
-
-    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-    <link rel="canonical" href="https://smbernard.tech/">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Susan M Bernard: Full Stack Web Developer">
-    <meta property="og:image" content="assets/image/logo/x630logo.png">
-    <meta property="og:url" content="https://smbernard.tech/">
-    <meta property="og:site_name" content="SMBernard Tech">
-    <meta property="og:description" content="Susan M Bernard is a professional full-stack developer, who merges artistic creativity with technical execution in the Greater Atlanta Area, GA, USA. Contact:(470.429.8556)">
-
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Susan M Bernard: Full Stack Web Developer">
-    <meta name="twitter:image" content="assets/image/logo/x630logo.png">
-    <meta name="twitter:description" content="Susan M Bernard is a professional full-stack software developer, who merges artistic creativity with technical execution in the Greater Atlanta Area, GA, USA. Contact:(470.429.8556)">
+    <!-- Link preview tags: used by LinkedIn, Discord, email, and messaging apps -->
+    <link
+      rel="canonical"
+      href="https://smbernard.tech/"
+    />
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:title"
+      content="Susan M Bernard: Full-Stack Developer"
+    />
+    <meta
+      property="og:image"
+      content="https://smbernard.tech/assets/image/logo/icon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://smbernard.tech/"
+    />
+    <meta
+      property="og:site_name"
+      content="SmBernard Tech"
+    />
+    <meta
+      property="og:description"
+      content="Susan M Bernard is a full-stack developer in the Greater Atlanta Area who builds web apps with JavaScript, TypeScript, Vue, Python, and PostgreSQL, with a focus on accessible, easy-to-use design. Call 470.576.3189 or email smb@smbernard.tech."
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/image/ico/favicon.ico">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/image/ico/favicon.ico"
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/ico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/ico/favicon-16x16.png">
-    <link rel="manifest" href="assets/image/site/site.webmanifest">
-    <link rel="mask-icon" href="assets/image/ico/safari-pinned-tab.svg" color="#8aacaf">
-    <meta name="msapplication-TileColor" content="#8aacaf">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/image/ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/image/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/image/ico/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="assets/image/site/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="assets/image/ico/safari-pinned-tab.svg"
+      color="#8aacaf"
+    />
+    <meta
+      name="msapplication-TileColor"
+      content="#8aacaf"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+    />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama|Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dr+Sugiyama|Montserrat|Open+Sans&amp;display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS File -->
-    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="assets/lib/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <!--animate.css-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--owl.carousel.css-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- owl.carousel.css -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.theme.default.min.css"
+    />
 
     <!-- Libraries CSS Files -->
-    <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- v4 shims: Keeps older fa-* icon names working -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css"
+    />
 
     <!-- Main Stylesheet File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link
+      href="assets/css/style.css"
+      rel="stylesheet"
+    />
 
-<!--
+    <!-- ======================
+        Author: SmBernard Tech
+      ====================== -->
+  </head>
 
+  <body>
+    <!-- Link: Skip to content, first tab stop on page -->
+    <a
+      class="skip-link"
+      href="#main"
+      >Skip to content</a
+    >
 
--->
-
-    <!-- =======================================================
-         Author: SmBernard Tech
-      ======================================================= -->
-</head>
-
-<body>
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status">&nbsp;</div>
-</div>
-
-
-<!-- ================================ #Cookie Consent ======================================= -->
-<!-- Modal -->
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Cookie Consent</h5>
-            </div>
-            <div class="modal-body">
-                <p>We use cookies to improve your website experience.</p>
-                <a class="learn-more" href="https://www.learn-about-cookies.com/" target="_blank">
-                    Learn more
-                    <strong><i class="fa fa-angle-right ml-2"></i></strong>
-                </a>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
-            </div>
-        </div>
+    <!-- =========== Preloader =========== -->
+    <div
+      id="preloader"
+      aria-hidden="true"
+    >
+      <div id="status">&nbsp;</div>
     </div>
-</div>
 
-<!-- =========================== end of cookie consent section ==================== -->
+    <!-- =========== Page Content =========== -->
 
-
-<!-- ================================ Page Content ================================ -->
-
-<!-- ================================ #hero ======================================= -->
-<section class="hero">
-    <div class="container text-center">
+    <!-- =========== #hero =========== -->
+    <!-- Labelled Region: Banner sits above header, so needs own landmark -->
+    <section
+      class="hero"
+      role="region"
+      aria-label="Introduction"
+    >
+      <div class="container text-center">
         <div class="row">
-            <div class="col-md-12">
-                <div id="hero">
-                    <!-- logo Dark White -->
-                    <img alt="SmBernard Tech logo light" src="assets/image/logo/heroLogo.svg">
-                </div>
+          <div class="col-md-12">
+            <div id="hero">
+              <img
+                alt="SmBernard Tech logo light"
+                src="assets/image/logo/heroLogo-light.svg"
+              />
             </div>
+          </div>
         </div>
 
         <div class="col-md-12">
-            <h1>SUSAN M BERNARD</h1>
-            <p class="tagline">Full Stack Web Developer</p>
-            <a class="btn btn-full" href="about.html"
-               target="_blank" style="font-size:18px">About Me</a>
+          <h1>SUSAN M BERNARD</h1>
+          <p class="tagline">Full-Stack Developer</p>
+          <!-- Buttons: Hero links -->
+          <a
+            class="btn btn-full hero-btn m-2"
+            href="#about"
+            ><i
+              class="fa-solid fa-chevron-down"
+              aria-hidden="true"
+            ></i
+            >About Me</a
+          >
+          <a
+            class="btn btn-full hero-btn m-2"
+            href="assets/download/SMBERNARD_2026.pdf"
+            target="_blank"
+            rel="noopener"
+            ><i
+              class="fa-solid fa-file-lines"
+              aria-hidden="true"
+            ></i
+            >Resume</a
+          >
+          <a
+            class="btn btn-full hero-btn m-2"
+            href="work-samples.html"
+            ><i
+              class="fa-solid fa-code"
+              aria-hidden="true"
+            ></i
+            >Samples</a
+          >
         </div>
-    </div>
-</section>
-<!-- ================================ end of hero section ========================= -->
+      </div>
+    </section>
+    <!-- =========== end of hero section =========== -->
 
-<!-- ================================ Call to Action ============================== -->
-<section class="cta">
-    <div class="container">
-        <div class="row">
+    <!-- =========== #header =========== -->
+    <header id="header">
+      <div class="container">
+        <div
+          id="logo"
+          class="pull-left"
+        >
+          <a href="index.html"
+            ><img
+              src="assets/image/logo/logo-nav-white2.svg"
+              alt="SmBernard Tech Logo"
+              title="SmBernard Tech Logo"
+          /></a>
+          <!-- Uncomment below when using text image -->
+          <!--<h1><a href="#top">#####</a></h1>-->
+        </div>
+
+        <!-- =========== #nav-menu-container =========== -->
+        <nav
+          id="nav-menu-container"
+          aria-label="Main"
+        >
+          <ul class="nav-menu pull-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="work-samples.html">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- =========== end of Header section =========== -->
+
+    <!-- =========== #main =========== -->
+    <main id="main">
+      <!-- =========== #about =========== -->
+      <section
+        class="about"
+        id="about"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="section-title">&#9884; About Me &#9884;</h2>
+            </div>
+          </div>
+
+          <section
+            class="me"
+            id="me"
+          >
+            <div class="container">
+              <div class="col-md-12 text-center">
+                <p>
+                  I'm a full-stack developer with nine years of experience
+                  building web apps, from the screens people use every day to
+                  the servers and databases behind them. I work mostly in
+                  JavaScript, TypeScript, Vue, Python, and PostgreSQL, and I
+                  care a lot about making software that's accessible and easy to
+                  use.
+                </p>
+                <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
+                <p>
+                  Before development, I worked in psychology, healthcare, and
+                  education, including time as a hospital corpsman in the U.S.
+                  Navy. That background shapes how I build, because I'm always
+                  thinking about the real person on the other end and whether
+                  they can actually get their job done.
+                </p>
+                <p>&#10048;&#10047;&#10048;&#10047;&#10048;</p>
+                <p>
+                  Right now I'm one of the main developers behind a farming app
+                  that growers use in the field to check soil and water
+                  conditions and to run their irrigation. I'm open to remote
+                  roles where I can keep building thoughtful, useful software
+                  with a great team.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- =========== end of about section =========== -->
+
+      <!-- =========== #skills =========== -->
+      <section
+        class="skills"
+        id="skills"
+      >
+        <div class="container">
+          <h2 class="text-center">&#9884; Skills &#9884;</h2>
+        </div>
+
+        <div class="skill-area">
+          <div class="container">
+            <!-- =========== owl-carousel =========== -->
+            <div
+              class="owl-carousel owl-theme"
+              id="skill"
+            >
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/android.png"
+                  alt="Android"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/bootstrap.png"
+                  alt="Bootstrap"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/canva.png"
+                  alt="Canva"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/claude.png"
+                  alt="Claude AI"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/css.png"
+                  alt="CSS3"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/docker.png"
+                  alt="Docker"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/fastAPI.png"
+                  alt="FastAPI"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/github.png"
+                  alt="GitHub"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/html1.png"
+                  alt="HTML5"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/Inkscape.png"
+                  alt="Inkscape"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/java.png"
+                  alt="Java"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/javascript.png"
+                  alt="JavaScript"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/jira.png"
+                  alt="Jira"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/json.png"
+                  alt="JSON"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/node.png"
+                  alt="Node.js"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/paintnet.png"
+                  alt="Paint.NET"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/POSTGRESQL.png"
+                  alt="PostgreSQL"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/python.png"
+                  alt="Python"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/quasar.png"
+                  alt="Quasar"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/rest.png"
+                  alt="REST"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/typescript.png"
+                  alt="TypeScript"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/ubuntu.png"
+                  alt="Ubuntu Linux"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/vscode.png"
+                  alt="VS Code"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="assets/image/skillSticker/vue.png"
+                  alt="Vue"
+                />
+              </div>
+            </div>
+
+            <!-- Button: Pause skills strip, required for self-starting motion -->
+            <div class="skill-controls">
+              <button
+                type="button"
+                class="skill-pause"
+                id="skill-pause"
+                aria-pressed="false"
+              >
+                Pause
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== end of skills section =========== -->
+
+      <!-- =========== #education =========== -->
+      <section
+        class="education"
+        id="education"
+      >
+        <div class="container">
+          <h2 class="text-center">&#9884; Education &#9884;</h2>
+          <div class="row">
+            <div class="col-sm-4 col-xs-6">
+              <div class="card card-block">
+                <!-- Alt: Carries overlay's wording, only shown on hover -->
+                <img
+                  alt="Boston University: Master of Science in Software Development, 3.57 GPA"
+                  class="education-img"
+                  src="assets/image/education/busd.png"
+                />
+                <div class="card-title-wrap">
+                  <span class="card-title">Boston University</span>
+                  <!-- Degree line: Touch screens only, cannot hover -->
+                  <span class="card-degree">Master of Science</span>
+                </div>
+
+                <div
+                  class="education-over"
+                  aria-hidden="true"
+                >
+                  <span class="ed-line hidden-md-down">Master of Science</span>
+                  <span class="ed-line hidden-md-down"
+                    >Software Development</span
+                  >
+                  <span class="ed-line hidden-md-down">3.57 GPA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+              <div class="card card-block">
+                <!-- ##### -->
+                <!-- Alt: Carries overlay's wording, only shown on hover -->
+                <img
+                  alt="Utah State University: Bachelor of Science in Communication Disorders and Deaf Education, 3.94 GPA"
+                  class="education-img"
+                  src="assets/image/education/usucomd.png"
+                />
+                <div class="card-title-wrap">
+                  <span class="card-title">Utah State University</span>
+                  <!-- Degree line: Touch screens only, cannot hover -->
+                  <span class="card-degree">Bachelor of Science</span>
+                </div>
+
+                <div
+                  class="education-over"
+                  aria-hidden="true"
+                >
+                  <span class="ed-line hidden-md-down"
+                    >Bachelor of Science</span
+                  >
+                  <span class="ed-line hidden-md-down">
+                    Communication Disorders <br />&amp; <br />Deaf Education
+                  </span>
+                  <span class="ed-line hidden-md-down">3.94 GPA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+              <div class="card card-block">
+                <!-- Alt: Carries overlay's wording, only shown on hover -->
+                <img
+                  alt="University of West Georgia: Bachelor of Arts in Psychology, Honors College, 3.70 GPA"
+                  class="education-img"
+                  src="assets/image/education/uwgpsych.png"
+                />
+                <div class="card-title-wrap">
+                  <span class="card-title">University of West Georgia</span>
+                  <!-- Degree line: Touch screens only, cannot hover -->
+                  <span class="card-degree">Bachelor of Arts</span>
+                </div>
+
+                <div
+                  class="education-over"
+                  aria-hidden="true"
+                >
+                  <span class="ed-line hidden-md-down">Bachelor of Arts</span>
+                  <span class="ed-line hidden-md-down">Psychology</span>
+                  <span class="ed-line hidden-md-down ed-note"
+                    >Honors College</span
+                  >
+                  <span class="ed-line hidden-md-down">3.70 GPA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== end of education section =========== -->
+
+      <!-- =========== CtA as break =========== -->
+      <section class="ctaAB">
+        <div class="container"></div>
+      </section>
+      <!-- =========== end of CtA as break section =========== -->
+
+      <!-- =========== #portfolio =========== -->
+      <section
+        class="portfolio"
+        id="portfolio"
+      >
+        <div class="container text-center">
+          <h2>&#9884; Portfolio &#9884;</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <a
+                  href="https://www.edithfine.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <!-- Alt: Carries tile's wording, only shown on hover -->
+                  <img
+                    alt="UI: visual design, layouts and wireframes, typography, colours, branding and logos. Shown here, an Edith Hope Fine book page with book details and buy links. Opens edithfine.com."
+                    src="assets/image/portfolio/p1ui-edithfine.png"
+                  />
+                  <div
+                    class="portfolio-over"
+                    aria-hidden="true"
+                  >
+                    <div>
+                      <h3 class="card-title">UI</h3>
+                      <p class="card-text">
+                        Visual Design &#10049; Layouts &amp; Wireframes &#10049;
+                        Typography &#10049; Colours &#10049; Branding &amp;
+                        Logos
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <!-- Alt: Carries tile's wording, only shown on hover -->
+                <img
+                  alt="UX: user stories and flows, information architecture, testing with real user roles, WCAG and accessibility. Shown here, a story map and release plan."
+                  src="assets/image/portfolio/p2ux.png"
+                />
+                <div
+                  class="portfolio-over"
+                  aria-hidden="true"
+                >
+                  <div>
+                    <h3 class="card-title">UX</h3>
+                    <p class="card-text">
+                      User Stories &amp; Flows &#10049; Information Architecture
+                      <br />&#10049; Testing With Real User Roles &#10049; WCAG
+                      &amp; Accessibility
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <a
+                  href="https://fineonline.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <!-- Alt: Carries tile's wording, only shown on hover -->
+                  <img
+                    alt="Web design and development: responsive and mobile-friendly, accessible design following WCAG, Vue and TypeScript, Python and FastAPI, PostgreSQL. Shown here, the Fine Technology Solutions site. Opens fineonline.com."
+                    src="assets/image/portfolio/p3web.png"
+                  />
+                  <div
+                    class="portfolio-over"
+                    aria-hidden="true"
+                  >
+                    <div>
+                      <h3 class="card-title">Web Design &amp; Development</h3>
+                      <p class="card-text">
+                        Responsive &amp; Mobile-Friendly &#10049; Accessible
+                        Design (WCAG) &#10049; Vue &amp; TypeScript &#10049;
+                        Python &amp; FastAPI &#10049; PostgreSQL
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="card card-block">
+                <!-- Alt: Carries tile's wording, only shown on hover -->
+                <img
+                  alt="AI-assisted development: custom agentic workflows, Claude Code, agents and commands built for my workflow, planning, code review, documentation."
+                  src="assets/image/portfolio/p4seo.png"
+                />
+                <div
+                  class="portfolio-over"
+                  aria-hidden="true"
+                >
+                  <div>
+                    <h3 class="card-title">AI-Assisted Development</h3>
+                    <p class="card-text">
+                      Custom Agentic Workflows &#10049; Claude Code &#10049;<br />
+                      Agents &amp; Commands Built for My Workflow &#10049;
+                      Planning &#10049;<br />
+                      Code Review &#10049; Documentation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 col-xs-12">
+                <div class="card card-block">
+                  <!-- Alt: Carries tile's wording, only shown on hover -->
+                  <img
+                    alt="Project planning: requirements gathering, planning docs and work packages, sprint and release planning, Jira and Trello. Shown here, use-case documents and a planning cycle."
+                    src="assets/image/portfolio/p5project.png"
+                  />
+                  <div
+                    class="portfolio-over"
+                    aria-hidden="true"
+                  >
+                    <div>
+                      <h3 class="card-title">Project Planning</h3>
+                      <p class="card-text">
+                        Requirements Gathering &#10049; Planning Docs &amp; Work
+                        Packages
+                        <br />&#10049; Sprint &amp; Release Planning &#10049;
+                        Jira &amp; Trello
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 col-xs-12">
+                <div class="card card-block">
+                  <!-- Alt: Carries tile's wording, only shown on hover -->
+                  <img
+                    alt="Software development: front end to database, REST APIs, testing and debugging, CI/CD with GitHub Actions, documentation. Shown here, code open in an editor."
+                    src="assets/image/portfolio/p6software.png"
+                  />
+                  <div
+                    class="portfolio-over"
+                    aria-hidden="true"
+                  >
+                    <div>
+                      <h3 class="card-title">Software Development</h3>
+                      <p class="card-text">
+                        Front End to Database &#10049; REST APIs <br />&#10049;
+                        Testing &amp; Debugging &#10049; CI/CD With GitHub
+                        Actions <br />&#10049; Documentation
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 col-xs-12">
+                <div class="card card-block">
+                  <!-- Alt: Carries tile's wording, only shown on hover -->
+                  <img
+                    alt="Mobile development: mobile-friendly web apps, phone and tablet layouts, touch-friendly design, Android and Java. Shown here, screens from an Android app."
+                    src="assets/image/portfolio/p7android.png"
+                  />
+                  <div
+                    class="portfolio-over"
+                    aria-hidden="true"
+                  >
+                    <div>
+                      <h3 class="card-title">Mobile Development</h3>
+                      <p class="card-text">
+                        Mobile-Friendly Web Apps &#10049; Phone &amp; Tablet
+                        Layouts
+                        <br />&#10049; Touch-Friendly Design &#10049; Android
+                        &amp; Java
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 col-xs-12">
+                <div class="card card-block">
+                  <!-- Alt: Carries tile's wording, only shown on hover -->
+                  <img
+                    alt="System design and UML: behavioral diagrams, use case, activity, state machine, sequence, communication, Miro and Visio. Shown here, a behavioral diagram."
+                    src="assets/image/portfolio/p8uml.png"
+                  />
+                  <div
+                    class="portfolio-over"
+                    aria-hidden="true"
+                  >
+                    <div>
+                      <h3 class="card-title">System Design &amp; UML</h3>
+                      <p class="card-text">
+                        Behavioral Diagrams &#10049; Use Case &#10049; Activity
+                        <br />&#10049; State Machine &#10049; Sequence &#10049;
+                        Communication <br />&#10049; Miro &amp; Visio
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== end of portfolio section =========== -->
+
+      <!-- =========== Call to Action =========== -->
+      <section class="cta">
+        <div class="container">
+          <div class="row">
             <div class="col-lg-9 col-sm-12 text-lg-left text-center">
-                <h2>Open to remote job opportunities</h2>
-                <p style="text-align: center">&#10046;&#10046;&#10046; Let's Build Something!</p>
+              <h2>Open to remote job opportunities</h2>
+              <p>&#10046;&#10046;&#10046; Let's Build Something!</p>
             </div>
 
             <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-                <a class="btn btn-ghost" href="index.html#contact">
-                    <i class="fa fa-envelope"></i>
-                    &nbsp;&nbsp;Contact Me</a>
+              <a
+                class="btn btn-ghost"
+                href="#contact"
+              >
+                <i
+                  class="fa fa-envelope"
+                  aria-hidden="true"
+                ></i
+                >&nbsp;&nbsp;Contact Me</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- ================================ end of Call to Action section =============== -->
+      </section>
+      <!-- =========== end of Call to Action section =========== -->
 
-<!-- ================================ #contact ==================================== -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
+      <!-- =========== #contact =========== -->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
             <div class="col-md-12 text-center">
-                <h2 class="section-title">&#9884; Contact Me &#9884;</h2>
-
+              <h2 class="section-title">&#9884; Contact Me &#9884;</h2>
             </div>
-        </div>
+          </div>
 
-        <div class="row justify-content-center">
+          <div class="row justify-content-center">
             <div class="col-lg-3 col-md-4">
-                <div class="info">
-                    <div> <br>
-                        <i class="fa fa-map-marker"></i>
-                        <p>Greater Atlanta Area<br>GA, USA</p>
-                    </div><br>
-
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <p>+1 470 429 8556</p><br><br>
-                    </div>
-
-                    <div>
-                        <a href="https://www.linkedin.com/in/smbernardtech/" target="_blank">
-                            <i class="fa fa-linkedin"></i></a><br><br>
-                    </div>
-
-                    <div>
-                        <a href="https://github.com/smbernardtech" target="_blank">
-                            <i class="fa fa-github"></i></a><br><br>
-                    </div>
-
+              <div class="info">
+                <div>
+                  <br />
+                  <i
+                    class="fa fa-map-marker"
+                    aria-hidden="true"
+                  ></i>
+                  <p>Greater Atlanta Area<br />GA, USA</p>
                 </div>
+                <br />
+
+                <div>
+                  <i
+                    class="fa fa-phone"
+                    aria-hidden="true"
+                  ></i>
+                  <p><a href="tel:+14705763189">+1 470 576 3189</a></p>
+                  <br /><br />
+                </div>
+
+                <div>
+                  <i
+                    class="fa fa-envelope"
+                    aria-hidden="true"
+                  ></i>
+                  <p>
+                    <a href="mailto:smb@smbernard.tech">smb@smbernard.tech</a>
+                  </p>
+                  <br /><br />
+                </div>
+
+                <!-- Link: LinkedIn, icon-only so name is spelled out -->
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/smbernardtech/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn profile"
+                  >
+                    <i
+                      class="fa fa-linkedin"
+                      aria-hidden="true"
+                    ></i></a
+                  ><br /><br />
+                </div>
+
+                <!-- Link: GitHub, icon-only so name is spelled out -->
+                <div>
+                  <a
+                    href="https://github.com/smbernardtech"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub profile"
+                  >
+                    <i
+                      class="fa fa-github"
+                      aria-hidden="true"
+                    ></i></a
+                  ><br /><br />
+                </div>
+              </div>
             </div>
 
             <div class="col-lg-5 col-md-8">
-                <p>&#10056; All fields required</p>
+              <p>&#10056; Name, email, and message required</p>
 
-                <!-- ================================ #contact-form ==================================== -->
-                <form id="contact-form" method="post" action="assets/php/contact.php" role="form" class="contact-form">
+              <!-- =========== #contact-form =========== -->
+              <form
+                id="contact-form"
+                method="post"
+                action="assets/php/contact.php"
+                role="form"
+                class="contact-form"
+              >
+                <!-- Live Region: Send result announced without moving focus -->
+                <div
+                  class="messages"
+                  role="alert"
+                  aria-live="assertive"
+                ></div>
 
-                    <div class="messages"></div>
+                <div class="controls">
+                  <div class="form-group">
+                    <label
+                      for="form_name"
+                      class="sr-only"
+                      >Name</label
+                    >
+                    <input
+                      id="form_name"
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required="required"
+                      data-error="&#9760; Please enter at least 2 characters"
+                    />
+                    <div
+                      class="help-block with-errors"
+                      role="alert"
+                    ></div>
+                  </div>
+                </div>
 
-                    <div class="controls">
+                <div class="form-group">
+                  <label
+                    for="form_email"
+                    class="sr-only"
+                    >Email</label
+                  >
+                  <input
+                    id="form_email"
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    required="required"
+                    data-error="&#9760; Please enter a valid email"
+                  />
+                  <div
+                    class="help-block with-errors"
+                    role="alert"
+                  ></div>
+                </div>
 
-                        <div class="form-group">
-                            <label for="form_name" class="sr-only">Name</label>
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Your Name" required="required" data-error="&#9760; Please enter at least 2 characters">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
+                <div class="form-group">
+                  <label
+                    for="form_phone"
+                    class="sr-only"
+                    >Phone</label
+                  >
+                  <input
+                    id="form_phone"
+                    type="tel"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Enter Phone (optional)"
+                  />
+                  <div
+                    class="help-block with-errors"
+                    role="alert"
+                  ></div>
+                </div>
+                <!--  Message Label -->
+                <div class="form-group">
+                  <label
+                    for="form_message"
+                    class="sr-only"
+                    >Message</label
+                  >
+                  <textarea
+                    id="form_message"
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    required="required"
+                    data-error="&#9760; Please include a message"
+                    placeholder="Message"
+                  ></textarea>
+                  <div
+                    class="help-block with-errors"
+                    role="alert"
+                  ></div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="form_email" class="sr-only">Email</label>
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter Email" required="required" data-error="&#9760; Please enter a valid email">
-                        <div class="help-block with-errors "></div>
-                    </div>
+                <!-- Honeypot: Hidden from people, bots fill it in. Never reaches the email -->
+                <div
+                  class="d-none"
+                  aria-hidden="true"
+                >
+                  <label for="form_website">Leave this field empty</label>
+                  <input
+                    id="form_website"
+                    type="text"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
+                </div>
 
-                    <div class="form-group">
-                        <label for="form_phone" class="sr-only">Phone</label>
-                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Enter Phone" required="required" data-error="&#9760; Please enter a valid phone number">
-                        <div class="help-block with-errors "></div>
-                    </div>
-<!--                    <label for="phone">Enter your phone number:</label>-->
-<!--                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">-->
-                    <div class="form-group">
-                        <label for="form_message" class="sr-only">Message</label>
-                        <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="&#9760; Please include a message" placeholder="Message"></textarea>
-                        <div class="help-block with-errors"></div>
-                    </div>
+                <!-- Turnstile: Replaces reCAPTCHA, most visitors see nothing to solve -->
+                <div class="form-group">
+                  <div
+                    class="cf-turnstile"
+                    data-sitekey="0x4AAAAAAE-LjP1_dbAoO-0I"
+                    data-callback="verifyTurnstileCallback"
+                    data-theme="light"
+                    data-expired-callback="expiredTurnstileCallback"
+                  ></div>
+                  <!-- Mirror field: Watched by validator.js, Turnstile is the real control. Not type="hidden", which validator.js skips. -->
+                  <input
+                    class="form-control d-none"
+                    type="text"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    data-turnstile="true"
+                    required
+                    data-error="&#129302; Please wait for the robot check to finish"
+                  />
+                  <div
+                    class="help-block with-errors"
+                    role="alert"
+                  ></div>
+                </div>
 
-                    <!-- ---Will need to replace testing key with personal sitekey---ENTER_GOOGLE_RECPATCHA_SITEKEY -->
-                    <div class="form-group">
-                        <div class="g-recaptcha" data-sitekey="6Le_9qkUAAAAAJ5B0AlYC3n1MXOpSwHcy-kf7YjK" data-callback="verifyRecaptchaCallback" data-theme="light" data-expired-callback="expiredRecaptchaCallback"></div>
-                        <label>
-                            <input class="form-control d-none" data-recaptcha="true" required data-error="Captcha required">
-                        </label>
-                        <div class="help-block with-errors"></div>
-                    </div>
-
-                    <div class="text-center">
-                        <!-- <input type="submit" class="submitMsg float-left" value="Send Message"> -->
-                        <button type="submit" class="btn btn-full float-left">Send Message</button>
-                    </div>
-
-                </form>
-                <!-- ================================ end of contact-form ==================================== -->
-
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-full float-left"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+              <!-- =========== end of contact-form =========== -->
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- ================================ end of contact section ====================== -->
+      </section>
+      <!-- =========== end of contact section =========== -->
+    </main>
+    <!-- =========== end of main =========== -->
 
-<!-- ================================ footer ====================================== -->
-<footer class="site-footer">
-    <div class="bottom">
+    <!-- =========== footer =========== -->
+    <footer class="site-footer">
+      <div class="bottom">
         <div class="container">
-            <div class="row">
+          <div class="footer-row">
+            <a
+              class="footer-logo"
+              href="#top"
+            >
+              <img
+                src="assets/image/logo/logo-nav3.svg"
+                alt="SmBernard Tech Logo"
+                title="SmBernard Tech Logo"
+              />
+            </a>
 
-                <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <!-- Nav: Footer icon links -->
+            <nav
+              class="footer-icons"
+              aria-label="Footer"
+            >
+              <a href="#top"
+                ><i
+                  class="fa-solid fa-house"
+                  aria-hidden="true"
+                ></i
+                ><span>Home</span></a
+              >
+              <a href="#about"
+                ><i
+                  class="fa-solid fa-circle-info"
+                  aria-hidden="true"
+                ></i
+                ><span>About</span></a
+              >
+              <a href="#skills"
+                ><i
+                  class="fa-solid fa-brain"
+                  aria-hidden="true"
+                ></i
+                ><span>Skills</span></a
+              >
+              <a href="#education"
+                ><i
+                  class="fa-solid fa-user-graduate"
+                  aria-hidden="true"
+                ></i
+                ><span>Education</span></a
+              >
+              <a href="#portfolio"
+                ><i
+                  class="fa-solid fa-briefcase"
+                  aria-hidden="true"
+                ></i
+                ><span>Portfolio</span></a
+              >
+              <a href="work-samples.html"
+                ><i
+                  class="fa-solid fa-code"
+                  aria-hidden="true"
+                ></i
+                ><span>Work</span></a
+              >
+              <a href="#contact"
+                ><i
+                  class="fa-solid fa-address-card"
+                  aria-hidden="true"
+                ></i
+                ><span>Contact</span></a
+              >
+              <span
+                class="footer-divider"
+                aria-hidden="true"
+              ></span>
+              <a
+                href="https://www.linkedin.com/in/smbernardtech/"
+                target="_blank"
+                rel="noopener"
+                ><i
+                  class="fa-brands fa-linkedin"
+                  aria-hidden="true"
+                ></i
+                ><span>LinkedIn</span></a
+              >
+              <a
+                href="https://github.com/smbernardtech"
+                target="_blank"
+                rel="noopener"
+                ><i
+                  class="fa-brands fa-github"
+                  aria-hidden="true"
+                ></i
+                ><span>GitHub</span></a
+              >
+            </nav>
+          </div>
 
-                    <a href="index.html">
-                        <img src="assets/image/logo/logo-nav3.svg" alt="SmBernard Tech Logo"
-                             title="SmBernard Tech Logo" />
-                    </a>
-                </div>
-
-                <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#hero">Home</a></li>
-                        <li class="list-inline-item"><a href="about.html" target="_blank">About</a></li>
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/smbernardtech/" target="_blank">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-
-                        <li class="list-inline-item">
-                            <a href="https://github.com/smbernardtech" target="_blank">
-                                <i class="fa fa-github-alt"></i>
-                            </a>
-                        </li>
-<!--
-                        <li class="list-inline-item"><a href="about.html#education" target="_blank">Education</a></li>
-                        <li class="list-inline-item"><a href="about.html#skills" target="_blank">Skills</a></li>
-                        <li class="list-inline-item"><a href="about.html#portfolio" target="_blank">Portfolio</a></li>
-                        <li class="list-inline-item"><a href="#contact">Contact</a></li>
--->
-                    </ul>
-                </div>
-                <div class="col-lg-7 col-xs-12 text-lg-right text-center">
-                    <p class="copyright-text">
-                        SmB
-                        <span>
-                                &copy;
-                                <!-- Get Current Copyright Year -->
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script> All rights Reserved
-                            </span>
-                    </p>
-
-                </div>
-            </div>
+          <p class="copyright-text">
+            SmB
+            <span>
+              &copy;
+              <!-- Get Current Copyright Year -->
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights Reserved
+            </span>
+          </p>
         </div>
-    </div>
-</footer>
-<!-- ================================ end of footer =============================== -->
+      </div>
+      <!-- Link: Back to top, fixed position; renders same wherever it sits -->
+      <a
+        class="scrolltop"
+        href="#top"
+        aria-label="Back to top"
+        ><span
+          class="fa fa-angle-up"
+          aria-hidden="true"
+        ></span
+      ></a>
+    </footer>
+    <!-- =========== end of footer =========== -->
 
-<!-- ================================ scrolltop =================================== -->
-<a class="scrolltop " href="#hero"><span class="fa fa-angle-up"></span></a>
-<!-- ============================ end of Page Content ============================= -->
+    <!-- =========== end of Page Content =========== -->
 
-<!-- ================================ Required JavaScript Libraries =============== -->
-<script src="assets/lib/jquery/jquery.min.js"></script>
-<script src="assets/lib/jquery/jquery-migrate.min.js"></script>
-<script src="assets/lib/superfish/hoverIntent.js"></script>
-<script src="assets/lib/superfish/superfish.min.js"></script>
-<script src="assets/lib/tether/js/tether.min.js"></script>
-<script src="assets/lib/stellar/stellar.min.js"></script>
-<script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/lib/counterup/counterup.min.js"></script>
-<script src="assets/lib/waypoints/waypoints.min.js"></script>
-<script src="assets/lib/easing/easing.js"></script>
-<script src="assets/lib/stickyjs/sticky.js"></script>
-<script src="assets/lib/parallax/parallax.js"></script>
-<script src="assets/lib/lockfixed/lockfixed.min.js"></script>
-
-<!-- ================================ Custom Javascript File ====================== -->
-<script src="assets/js/custom.js"></script>
-<!-- ================================ Contact Form ================================ -->
-<script src="assets/js/contact.js"></script>
-<script src="assets/js/validator.js"></script>
-<!-- ================================ owl.carousel.js ============================= -->
-<script src="assets/js/owl.carousel.min.js"></script>
-<!-- ================================ Google Recaptcha ============================ -->
-<script src="https://www.google.com/recaptcha/api.js"></script>
-
-</body>
-
+    <!-- =========== Required JavaScript Libraries =========== -->
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <!-- =========== Custom Javascript File =========== -->
+    <script src="assets/js/custom.js"></script>
+    <!-- =========== Contact Form =========== -->
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <!-- =========== owl.carousel.js =========== -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- =========== Cookie Notice =========== -->
+    <script src="assets/js/cookie-notice.js"></script>
+    <!-- =========== Cloudflare Turnstile =========== -->
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      defer
+    ></script>
+  </body>
 </html>
