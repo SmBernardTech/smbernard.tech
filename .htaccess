@@ -1,5 +1,8 @@
 Options -Indexes
 
+# Git: Never serve repository internals, history is readable otherwise
+RedirectMatch 404 ^/\.git
+
 # Force HTTPS
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
